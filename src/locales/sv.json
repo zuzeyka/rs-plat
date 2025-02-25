@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "Hem",
+        "about": "Om Oss",
+        "objects": "Objekt",
+        "services": "Tjänster",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Välkommen till RS-Plat"
+    },
+    "about": {
+        "title": "Om Oss"
+    },
+    "objects": {
+        "title": "Objekt"
+    },
+    "services": {
+        "title": "Våra Tjänster"
+    },
+    "contact": {
+        "title": "Kontakta Oss"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "objects": "Objects",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Welcome to RS-Plat"
+    },
+    "about": {
+        "title": "About Us"
+    },
+    "objects": {
+        "title": "Objects"
+    },
+    "services": {
+        "title": "Our Services"
+    },
+    "contact": {
+        "title": "Contact Us"
+    }
+}
