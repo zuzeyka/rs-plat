@@ -19,6 +19,13 @@
         "title": "Våra Tjänster"
     },
     "contact": {
-        "title": "Kontakta Oss"
+        "title": "Kontakta Oss",
+        "form": {
+            "name": "Ange ditt namn:",
+            "name-placeholder": "Ditt telefonnummer",
+            "phone": "Ange ditt telefonnummer för återuppringning:",
+            "phone-placeholder": "Ditt telefonnummer",
+            "submit": "Skicka"
+        }
     }
 }

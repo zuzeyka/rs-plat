@@ -19,6 +19,13 @@
         "title": "Our Services"
     },
     "contact": {
-        "title": "Contact Us"
+        "title": "Contact Us",
+        "form": {
+            "name": "Enter your name:",
+            "name-placeholder": "Your phone number",
+            "phone": "Enter your phone number for a callback:",
+            "phone-placeholder": "Your phone number",
+            "submit": "Submit"
+        }
     }
 }
