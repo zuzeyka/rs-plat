@@ -7,10 +7,16 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "Welcome to RS-Plat"
+        "title": "Welcome to construction company RS-Plat",
+        "subtitle": "A construction company that develops rapidly in the Ukrainian market for modern properties.The company was created by a team of professionals in the area of ​​housing and commercial construction."
     },
     "about": {
-        "title": "About Us"
+        "title": "Construction company RS-Plat",
+        "description": "A construction company that is rapidly developing in the Ukrainian real estate market. The company was founded by a team of professionals in the field of residential and commercial construction. The successful experience and professionalism of the company's employees have made it possible to create an effective and reliable project management structure, guaranteed work quality, and clear implementation deadlines.",
+        "families": "Families moved into their apartments",
+        "objects": "House has already been taken in use",
+        "commercial": "Leased commercial premises where operations are conducted",
+        "cities": "Cities where construction is actively going on"
     },
     "objects": {
         "title": "Objects"

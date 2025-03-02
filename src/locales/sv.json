@@ -7,10 +7,16 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Välkommen till RS-Plat"
+        "title": "Välkommen till byggföretag RS-Plat",
+        "subtitle": "Ett byggföretag som utvecklas snabbt på den ukrainska marknaden för moderna fastigheter. Företaget skapades av ett team av proffs inom området bostads och kommersiellt byggande."
     },
     "about": {
-        "title": "Om Oss"
+        "title": "Byggföretaget RS-Plat",
+        "description": "Ett byggföretag som utvecklas snabbt på den ukrainska fastighetsmarknaden. Företaget grundades av ett team av proffs inom bostads- och kommersiellt byggande. Företagets anställdas framgångsrika erfarenhet och professionalism har gjort det möjligt att skapa en effektiv och pålitlig projektledningsstruktur, garanterad arbetskvalitet och tydliga genomförandetider.",
+        "families": "Familjer flyttade in i sina lägenheter",
+        "objects": "Hus har redan tagits i bruk",
+        "commercial": "Upplåtna kommersiella lokaler där verksamhet bedrivs",
+        "cities": "Städer där byggandet aktivt pågår"
     },
     "objects": {
         "title": "Objekt"
