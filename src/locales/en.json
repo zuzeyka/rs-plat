@@ -7,7 +7,7 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "Welcome to construction company RS-Plat",
+        "title": "Welcome to construction company: RS-Plat",
         "subtitle": "A construction company that develops rapidly in the Ukrainian market for modern properties.The company was created by a team of professionals in the area of ​​housing and commercial construction."
     },
     "about": {
@@ -19,7 +19,26 @@
         "cities": "Cities where construction is actively going on"
     },
     "objects": {
-        "title": "Objects"
+        "title": "Objects",
+        "subtitle": "Our projects",
+        "list": [
+            {
+                "city": "Umeå",
+                "title": "Residential Complex «Sunny»"
+            },
+            {
+                "city": "Stockholm",
+                "title": "Office Center «Prestige»"
+            },
+            {
+                "city": "Göteborg",
+                "title": "Cottage Town «Green Park»"
+            },
+            {
+                "city": "Malmö",
+                "title": "Sports Center «Sport»"
+            }
+        ]
     },
     "services": {
         "title": "Our Services"

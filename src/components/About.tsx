@@ -29,14 +29,15 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="w-full pt-40 text-center text-typography">
-            <div className="containe flex mx-auto ">
+        <section id="about" className="w-full pt-20 text-center text-typography">
+            <div className="containe lg:flex mx-auto ">
                 <div className="w-full">
                     <h2 className="lg:text-7xl text-3xl font-bold font-montserrat mb-4">{t('about.title')}</h2>
+                    <h3 className="lg:text-3xl text-lg font-bold text-typography mb-4">{t('about.subtitle')}</h3>
                     <p className="lg:text-2xl text-lg leading-relaxed mb-10">{t('about.description')}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+                <div className="grid grid-cols-2 gap-10 w-full">
                     {stats.map((stat) => (
                         <motion.div
                             key={stat.id}
