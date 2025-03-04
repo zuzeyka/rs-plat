@@ -8,13 +8,18 @@ const Navbar: React.FC = () => {
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isCLicked, setIsClicked] = useState(false);
 
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY < lastScrollY || currentScrollY <= 0) {
-            setShowHeader(true);
-            setIsMenuOpen(false);
+            if (isCLicked) {
+                setShowHeader(false);
+            } else {
+                setShowHeader(true);
+                setIsMenuOpen(false);
+            }
         } else {
             setShowHeader(false);
         }
@@ -34,6 +39,13 @@ const Navbar: React.FC = () => {
         setIsMenuOpen((prev) => !prev);
     };
 
+    const handleLinkClick = () => {
+        setIsClicked(true);
+        setTimeout(() => {
+            setIsClicked(false);
+        }, 800);
+    };
+
     return (
         <nav
             className={`${lastScrollY > 100 ? 'bg-white/10 backdrop-blur-md' : 'bg-transparent'} text-secondary-light justify-between px-4 py-3 w-screen flex fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
@@ -51,27 +63,27 @@ const Navbar: React.FC = () => {
             >
                 <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-lg lg:text-3xl p-4 lg:p-0">
                     <li>
-                        <a href="#home" className="hover:opacity-80">
+                        <a href="#home" className="hover:opacity-80" onClick={handleLinkClick}>
                             {t('navbar.home')}
                         </a>
                     </li>
                     <li>
-                        <a href="#about" className="hover:opacity-80">
+                        <a href="#about" className="hover:opacity-80" onClick={handleLinkClick}>
                             {t('navbar.about')}
                         </a>
                     </li>
                     <li>
-                        <a href="#objects" className="hover:opacity-80">
+                        <a href="#objects" className="hover:opacity-80" onClick={handleLinkClick}>
                             {t('navbar.objects')}
                         </a>
                     </li>
                     <li>
-                        <a href="#services" className="hover:opacity-80">
+                        <a href="#services" className="hover:opacity-80" onClick={handleLinkClick}>
                             {t('navbar.services')}
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className="hover:opacity-80">
+                        <a href="#contact" className="hover:opacity-80" onClick={handleLinkClick}>
                             {t('navbar.contact')}
                         </a>
                     </li>

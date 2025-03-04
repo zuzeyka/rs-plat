@@ -29,7 +29,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="w-full pt-20 text-center text-typography">
+        <section id="about" className="w-full lg:py-44 text-center text-typography">
             <div className="containe lg:flex mx-auto ">
                 <div className="w-full">
                     <h2 className="lg:text-7xl text-3xl font-bold font-montserrat mb-4">{t('about.title')}</h2>

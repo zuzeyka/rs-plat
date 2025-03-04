@@ -11,7 +11,7 @@ const LanguageSwitcher: React.FC = () => {
 
     return (
         <div className="lg:mr-4 lg:mt-0 my-auto lg:my-0">
-            <div className="lg:flex lg:flex-col justify-center h-full w-full items-center">
+            <div className="lg:flex lg:flex-col lg:space-y-4 lg:space-x-0 space-x-4 h-full w-full">
                 <Button
                     onClick={() => changeLanguage('sv')}
                     className={`${i18n.language === 'sv' ? 'bg-primary' : 'bg-secondary'} px-3 py-1 text-typography rounded text-sm sm:text-base lg:h-full lg:w-full`}

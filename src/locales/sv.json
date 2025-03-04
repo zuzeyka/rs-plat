@@ -42,7 +42,52 @@
         ]
     },
     "services": {
-        "title": "Våra Tjänster"
+        "title": "Våra tjänster",
+        "description": "Vi erbjuder ett omfattande utbud av byggtjänster.",
+        "calculatorTitle": "Kostnadskalkylator",
+        "selectService": "Välj tjänst",
+        "area": "Yta (m²)",
+        "calculate": "Beräkna kostnad",
+        "estimatedCost": "Uppskattad kostnad",
+        "unitCost": "Pris per m²",
+
+        "list": [
+            {
+                "id": 1,
+                "title": "Bostadsbyggande",
+                "description": "Högkvalitativa byggtjänster för bostadsprojekt.",
+                "unitCost": 1200,
+                "icon": "🏠"
+            },
+            {
+                "id": 2,
+                "title": "Kommersiellt byggande",
+                "description": "Expertis inom kommersiella byggprojekt.",
+                "unitCost": 1500,
+                "icon": "🏢"
+            },
+            {
+                "id": 3,
+                "title": "Renovering",
+                "description": "Renovering och ombyggnadstjänster.",
+                "unitCost": 800,
+                "icon": "🔨"
+            },
+            {
+                "id": 4,
+                "title": "Inredningsdesign",
+                "description": "Modern inredningsdesign för ditt utrymme.",
+                "unitCost": 500,
+                "icon": "🛋️"
+            },
+            {
+                "id": 5,
+                "title": "Projektledning",
+                "description": "Fullständig projektledningstjänster.",
+                "unitCost": 300,
+                "icon": "📊"
+            }
+        ]
     },
     "contact": {
         "title": "Kontakta Oss",

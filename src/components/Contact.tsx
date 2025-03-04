@@ -11,7 +11,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="h-screen flex flex-col items-center justify-center p-8">
+        <section id="contact" className="h-screen flex flex-col items-center justify-center py-8">
             <h2 className="text-3xl font-semibold mb-6">{t('contact.title')}</h2>
             <div className="text-center mb-8">
                 <p className="text-lg font-medium">{t('contact.companyName', { defaultValue: 'RS Plåt AB' })}</p>

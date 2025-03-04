@@ -41,7 +41,52 @@
         ]
     },
     "services": {
-        "title": "Our Services"
+        "title": "Our Services",
+        "description": "We offer a comprehensive range of construction services.",
+        "calculatorTitle": "Cost Calculator",
+        "selectService": "Select Service",
+        "area": "Area (m²)",
+        "calculate": "Calculate Cost",
+        "estimatedCost": "Estimated Cost",
+        "unitCost": "Unit Price",
+
+        "list": [
+            {
+                "id": 1,
+                "title": "Residential Construction",
+                "description": "High quality building services for residential projects.",
+                "unitCost": 1200,
+                "icon": "🏠"
+            },
+            {
+                "id": 2,
+                "title": "Commercial Construction",
+                "description": "Expertise in commercial building projects.",
+                "unitCost": 1500,
+                "icon": "🏢"
+            },
+            {
+                "id": 3,
+                "title": "Renovation",
+                "description": "Renovation and remodeling services.",
+                "unitCost": 800,
+                "icon": "🔨"
+            },
+            {
+                "id": 4,
+                "title": "Interior Design",
+                "description": "Modern interior design for your space.",
+                "unitCost": 500,
+                "icon": "🛋️"
+            },
+            {
+                "id": 5,
+                "title": "Project Management",
+                "description": "Complete project management services.",
+                "unitCost": 300,
+                "icon": "📊"
+            }
+        ]
     },
     "contact": {
         "title": "Contact Us",
