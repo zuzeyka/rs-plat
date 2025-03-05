@@ -4,15 +4,16 @@
         "about": "About Us",
         "objects": "Objects",
         "services": "Services",
-        "contact": "Contact"
+        "contacts": "Contacts"
     },
     "hero": {
         "title": "Welcome to construction company: RS-Plat",
-        "subtitle": "A construction company that develops rapidly in the Ukrainian market for modern properties.The company was created by a team of professionals in the area of ​​housing and commercial construction."
+        "subtitle": "A construction company that develops rapidly in the Swedish market for modern properties.The company was created by a team of professionals in the area of ​​housing and commercial construction."
     },
     "about": {
-        "title": "Construction company RS-Plat",
-        "description": "A construction company that is rapidly developing in the Ukrainian real estate market. The company was founded by a team of professionals in the field of residential and commercial construction. The successful experience and professionalism of the company's employees have made it possible to create an effective and reliable project management structure, guaranteed work quality, and clear implementation deadlines.",
+        "title": "RS-Plat",
+        "subtitle": "The construction company",
+        "description": "A construction company that is rapidly developing in the Swedish real estate market. The company was founded by a team of professionals in the field of residential and commercial construction. The successful experience and professionalism of the company's employees have made it possible to create an effective and reliable project management structure, guaranteed work quality, and clear implementation deadlines.",
         "families": "Families moved into their apartments",
         "objects": "House has already been taken in use",
         "commercial": "Leased commercial premises where operations are conducted",
@@ -88,14 +89,35 @@
             }
         ]
     },
-    "contact": {
-        "title": "Contact Us",
-        "form": {
-            "name": "Enter your name:",
-            "name-placeholder": "Your phone number",
-            "phone": "Enter your phone number for a callback:",
-            "phone-placeholder": "Your phone number",
-            "submit": "Submit"
-        }
+    "contacts": {
+        "title": "Get in Touch",
+        "description": "We are here to help you with your construction needs. Reach out to us using the following contact details.",
+        "address": "Address",
+        "addressValue": "Kvarnvägen 7 , 903 20 UMEÅ",
+        "phone": "Phone",
+        "phoneValue": "+46 70 041 45 91",
+        "email": "Email",
+        "emailValue": "rikard@rsplatab.se",
+        "hours": "Working Hours",
+        "hoursValue": "Mon-Fri: 8 AM - 5 PM",
+        "organizationNumber": "Organization Number",
+        "organizationNumberValue": "559452-9207",
+        "callbackTitle": "Request a Callback",
+        "callbackDescription": "Enter your phone number and we will get back to you as soon as possible.",
+        "callbackPlaceholder": "Your phone number",
+        "callbackSubmit": "Submit",
+        "callbackErrorEmpty": "Please enter your phone number.",
+        "callbackErrorInvalid": "Please enter a valid phone number.",
+        "callbackSuccess": "Thank you! We will call you back shortly."
+    },
+    "footer": {
+        "companyName": "Construction Co.",
+        "companyDescription": "Building excellence since 1990",
+        "quickLinks": "Quick Links",
+        "home": "Home",
+        "services": "Services",
+        "contact": "Contact",
+        "followUs": "Follow Us",
+        "copyright": "© 2025 Construction Co. All rights reserved."
     }
 }

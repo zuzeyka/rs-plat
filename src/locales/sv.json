@@ -4,16 +4,16 @@
         "about": "Om Oss",
         "objects": "Objekt",
         "services": "Tjänster",
-        "contact": "Kontakt"
+        "contacts": "Kontakter"
     },
     "hero": {
         "title": "Välkommen till byggföretag: RS-Plat",
-        "subtitle": "Ett byggföretag som utvecklas snabbt på den ukrainska marknaden för moderna fastigheter. Företaget skapades av ett team av proffs inom området bostads och kommersiellt byggande."
+        "subtitle": "Ett byggföretag som utvecklas snabbt på den svenska marknaden för moderna fastigheter. Företaget skapades av ett team av proffs inom området bostads och kommersiellt byggande."
     },
     "about": {
         "title": "RS-Plat",
         "subtitle": "Byggföretaget",
-        "description": "Ett byggföretag som utvecklas snabbt på den ukrainska fastighetsmarknaden. Företaget grundades av ett team av proffs inom bostads- och kommersiellt byggande. Företagets anställdas framgångsrika erfarenhet och professionalism har gjort det möjligt att skapa en effektiv och pålitlig projektledningsstruktur, garanterad arbetskvalitet och tydliga genomförandetider.",
+        "description": "Ett byggföretag som utvecklas snabbt på den svenska fastighetsmarknaden. Företaget grundades av ett team av proffs inom bostads- och kommersiellt byggande. Företagets anställdas framgångsrika erfarenhet och professionalism har gjort det möjligt att skapa en effektiv och pålitlig projektledningsstruktur, garanterad arbetskvalitet och tydliga genomförandetider.",
         "families": "Familjer flyttade in i sina lägenheter",
         "objects": "Hus har redan tagits i bruk",
         "commercial": "Upplåtna kommersiella lokaler där verksamhet bedrivs",
@@ -89,14 +89,35 @@
             }
         ]
     },
-    "contact": {
+    "contacts": {
         "title": "Kontakta Oss",
-        "form": {
-            "name": "Ange ditt namn:",
-            "name-placeholder": "Ditt telefonnummer",
-            "phone": "Ange ditt telefonnummer för återuppringning:",
-            "phone-placeholder": "Ditt telefonnummer",
-            "submit": "Skicka"
-        }
+        "description": "Vi finns här för att hjälpa dig med dina byggbehov. Kontakta oss via följande uppgifter.",
+        "address": "Adress",
+        "addressValue": "Kvarnvägen 7 , 903 20 UMEÅ",
+        "phone": "Telefon",
+        "phoneValue": "+46 70 041 45 91",
+        "email": "E-post",
+        "emailValue": "rikard@rsplatab.se",
+        "hours": "Öppettider",
+        "hoursValue": "Mån-Fre: 8.00 - 17.00",
+        "organizationNumber": "Organisationsnummer",
+        "organizationNumberValue": "559452-9207",
+        "callbackTitle": "Begär en återuppringning",
+        "callbackDescription": "Ange ditt telefonnummer så ringer vi upp dig så snart som möjligt.",
+        "callbackPlaceholder": "Ditt telefonnummer",
+        "callbackSubmit": "Skicka",
+        "callbackErrorEmpty": "Vänligen ange ditt telefonnummer.",
+        "callbackErrorInvalid": "Vänligen ange ett giltigt telefonnummer.",
+        "callbackSuccess": "Tack! Vi ringer upp dig snart."
+    },
+    "footer": {
+        "companyName": "Byggföretaget",
+        "companyDescription": "Bygger på excellens sedan 1990",
+        "quickLinks": "Snabblänkar",
+        "home": "Hem",
+        "services": "Tjänster",
+        "contact": "Kontakt",
+        "followUs": "Följ oss",
+        "copyright": "© 2025 Byggföretaget. Alla rättigheter förbehållna."
     }
 }

@@ -83,8 +83,8 @@ const Navbar: React.FC = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className="hover:opacity-80" onClick={handleLinkClick}>
-                            {t('navbar.contact')}
+                        <a href="#contacts" className="hover:opacity-80" onClick={handleLinkClick}>
+                            {t('navbar.contacts')}
                         </a>
                     </li>
                 </ul>
