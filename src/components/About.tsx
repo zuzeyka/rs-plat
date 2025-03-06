@@ -29,8 +29,16 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="w-full lg:py-44 text-center text-typography">
-            <div className="containe lg:flex mx-auto ">
+        <section id="about" className="relative w-full lg:py-44 text-center text-typography">
+            {/* Decorative Elements */}
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                <div className="absolute top-10 left-10 w-16 h-1 bg-primary"></div>
+                <div className="absolute top-20 left-30 w-1 h-16 bg-primary"></div>
+                <div className="absolute bottom-10 right-10 w-16 h-1 bg-secondary"></div>
+                <div className="absolute bottom-20 right-0 w-1 h-16 bg-secondary"></div>
+            </div>
+
+            <div className="container lg:flex mx-auto">
                 <div className="w-full">
                     <h2 className="lg:text-7xl text-3xl font-bold font-montserrat mb-4">{t('about.title')}</h2>
                     <h3 className="lg:text-3xl text-lg font-bold text-typography mb-4">{t('about.subtitle')}</h3>
