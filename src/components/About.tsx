@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import DecorativeElements from '@/components/DecorativeElements';
+import GeometricDecorations from '@/components/GeometricDecorations';
 
 const About = () => {
     const { t } = useTranslation();
@@ -31,16 +31,16 @@ const About = () => {
 
     return (
         <section id="about" className="relative w-full lg:py-44 text-center text-typography">
-            <DecorativeElements orientation="horizontal" />
-            <DecorativeElements orientation="vertical" />
-            <div className="container lg:flex mx-auto">
-                <div className="w-full">
+            <div className="container lg:flex mx-auto p-10 lg:p-20 relative z-10">
+                <div className="absolute inset-0 bg-cover bg-black opacity-50 rounded-3xl bg-center w-full h-full"></div>
+                <GeometricDecorations horizontalCount={0} verticalCount={0} plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10} />
+                <div className="w-full z-0">
                     <h2 className="lg:text-7xl text-3xl font-bold font-montserrat mb-4">{t('about.title')}</h2>
                     <h3 className="lg:text-3xl text-lg font-bold text-typography mb-4">{t('about.subtitle')}</h3>
                     <p className="lg:text-2xl text-lg leading-relaxed mb-10">{t('about.description')}</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-10 w-full">
+                <div className="grid grid-cols-2 gap-10 w-full z-0">
                     {stats.map((stat) => (
                         <motion.div
                             key={stat.id}
