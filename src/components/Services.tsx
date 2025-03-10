@@ -35,7 +35,6 @@ const Services = () => {
             <h3 className="text-center lg:text-3xl text-lg mb-10">{t('services.description')}</h3>
 
             <div className="grid md:grid-cols-2 gap-10">
-                {/* Секция карточек услуг */}
                 <div className="grid grid-cols-1 gap-6">
                     {services.map((service, index) => (
                         <motion.div

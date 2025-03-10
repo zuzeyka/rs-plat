@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Input } from './ui/input';
+import GeometricDecorations from './GeometricDecorations';
 
 const ContactsSection = () => {
     const { t } = useTranslation();
@@ -27,16 +28,23 @@ const ContactsSection = () => {
     return (
         <section id="contacts" className="relative bg-gradient-to-r from-primary-light to-secondary-light text-typography py-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:space-x-10">
+                <GeometricDecorations
+                    color="typography-dark"
+                    secondaryColor="typography"
+                    horizontalCount={0}
+                    verticalCount={0}
+                    plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10}
+                />
                 <motion.div
-                    className="w-full md:w-1/2 mb-10 md:mb-0"
+                    className="w-full md:w-1/2 mb-10 md:mb-0 z-10"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="lg:text-4xl text-2xl font-bold mb-6">{t('contacts.title')}</h2>
-                    <p className="text-lg mb-6">{t('contacts.description')}</p>
-                    <div className="space-y-4">
+                    <h2 className="lg:text-4xl text-2xl font-bold mb-6 z-10">{t('contacts.title')}</h2>
+                    <p className="text-lg mb-6 z-10">{t('contacts.description')}</p>
+                    <div className="space-y-4 z-10">
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
                             <a href="https://maps.app.goo.gl/5JdVy8KzgxkrJBpf8">{t('contacts.addressValue')}</a>
@@ -61,7 +69,7 @@ const ContactsSection = () => {
                 </motion.div>
 
                 <motion.div
-                    className="w-full md:w-1/2 bg-typography text-primary rounded-lg shadow-2xl p-8"
+                    className="w-full md:w-1/2 bg-typography text-primary z-10 rounded-lg shadow-2xl p-8"
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}

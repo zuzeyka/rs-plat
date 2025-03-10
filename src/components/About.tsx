@@ -30,34 +30,40 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="relative w-full lg:py-44 text-center text-typography">
-            <div className="container lg:flex mx-auto p-10 lg:p-20 relative z-10">
-                <div className="absolute inset-0 bg-cover bg-black opacity-50 rounded-3xl bg-center w-full h-full"></div>
-                <GeometricDecorations horizontalCount={0} verticalCount={0} plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10} />
-                <div className="w-full z-0">
-                    <h2 className="lg:text-7xl text-3xl font-bold font-montserrat mb-4">{t('about.title')}</h2>
-                    <h3 className="lg:text-3xl text-lg font-bold text-typography mb-4">{t('about.subtitle')}</h3>
-                    <p className="lg:text-2xl text-lg leading-relaxed mb-10">{t('about.description')}</p>
+        <section id="about" className="relative w-full lg:py-16 text-center text-typography">
+            <div className="container lg:flex mx-auto p-10 lg:p-20 relative">
+                <div className="absolute inset-0 bg-cover bg-black opacity-50 rounded-3xl bg-center w-full h-full z-0"></div>
+                <GeometricDecorations
+                    color="primary"
+                    secondaryColor="primary-light"
+                    horizontalCount={0}
+                    verticalCount={0}
+                    plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10}
+                />
+                <div className="w-full z-10 relative">
+                    <h2 className="lg:text-7xl text-3xl font-bold z-10 font-montserrat mb-4">{t('about.title')}</h2>
+                    <h3 className="lg:text-3xl text-lg font-bold z-10 mb-4">{t('about.subtitle')}</h3>
+                    <p className="lg:text-2xl text-lg z-10 leading-relaxed mb-10">{t('about.description')}</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-10 w-full z-0">
+                <div className="grid grid-cols-2 gap-10 w-full z-10">
                     {stats.map((stat) => (
                         <motion.div
                             key={stat.id}
-                            className="rounded-lg p-6"
+                            className="rounded-lg p-6 z-10"
                             initial={{ opacity: 0, y: 20 }}
                             animate={isVisible ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.5, delay: stat.id * 0.2 }}
                         >
                             <motion.h3
-                                className="text-4xl font-bold text-typography"
+                                className="text-4xl font-bold z-10"
                                 initial={{ opacity: 0 }}
                                 animate={isVisible ? { opacity: 1 } : {}}
                                 transition={{ duration: 0.8, delay: stat.id * 0.3 }}
                             >
                                 ~{isVisible ? stat.value : '0'}+
                             </motion.h3>
-                            <p className="text-lg text-typography">{stat.label}</p>
+                            <p className="text-lg z-10">{stat.label}</p>
                         </motion.div>
                     ))}
                 </div>

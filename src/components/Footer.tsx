@@ -38,7 +38,6 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/* Социальные сети */}
                         <div>
                             <h3 className="font-semibold text-typography-secondary mb-2">{t('footer.followUs', 'Follow Us')}</h3>
                             <div className="flex space-x-4">
@@ -62,7 +61,6 @@ const Footer = () => {
                     </div>
                 </motion.div>
 
-                {/* Нижняя часть футера */}
                 <motion.div
                     className="mt-8 border-t border-typography-secondary pt-4 text-center lg:text-sm text-xs"
                     initial={{ opacity: 0 }}
