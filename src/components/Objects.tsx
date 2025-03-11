@@ -22,7 +22,7 @@ const Objects = () => {
     };
 
     return (
-        <section id="objects" className="w-full mx-auto py-20 text-center text-typography">
+        <section id="objects" className="w-full mx-auto border-b-4 border-primary py-20 text-center text-typography">
             <h2 className="lg:text-7xl text-3xl mb-10">{t('objects.title')}</h2>
             <h3 className="lg:text-3xl text-lg font-bold text-typography mb-4">{t('objects.subtitle')}</h3>
 

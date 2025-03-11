@@ -30,7 +30,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="relative w-full lg:py-16 text-center text-typography">
+        <section id="about" className="relative w-full lg:py-16 border-t-4 border-b-4 border-primary text-center text-typography">
             <div className="container lg:flex mx-auto p-10 lg:p-20 relative">
                 <div className="absolute inset-0 bg-cover bg-black opacity-50 rounded-3xl bg-center w-full h-full z-0"></div>
                 <GeometricDecorations
