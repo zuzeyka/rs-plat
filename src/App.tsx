@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 function App() {
     return (
         <>
+            <div className="vertical-line lg:left-[10vh] left-[2vh] bg-secondary"></div>
             <Navbar />
             <Hero />
             <About />

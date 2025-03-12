@@ -29,7 +29,7 @@ const ContactsSection = () => {
         <section id="contacts" className="relative bg-gradient-to-r from-primary-light to-secondary-light text-typography py-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:space-x-10">
                 <GeometricDecorations
-                    color="typography-dark"
+                    color="secondary-light"
                     secondaryColor="typography"
                     horizontalCount={0}
                     verticalCount={0}
