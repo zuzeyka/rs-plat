@@ -6,6 +6,8 @@
 @import '@fontsource/montserrat/600.css';
 @import '@fontsource/montserrat/700.css';
 
+@import 'react-phone-input-2/lib/style.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

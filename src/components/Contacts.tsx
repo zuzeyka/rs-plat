@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Input } from './ui/input';
+import PhoneInput from 'react-phone-input-2';
 import GeometricDecorations from './GeometricDecorations';
 
 const ContactsSection = () => {
@@ -78,13 +78,12 @@ const ContactsSection = () => {
                     <h3 className="lg:text-4xl text-2xl font-bold mb-4">{t('contacts.callbackTitle')}</h3>
                     <p className="mb-6">{t('contacts.callbackDescription')}</p>
                     <form onSubmit={handleCallbackSubmit} className="flex flex-col space-y-4">
-                        <Input
-                            type="tel"
-                            pattern="[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s./0-9]*"
-                            placeholder={t('contacts.callbackPlaceholder')}
-                            className="p-3 border text-typography border-typography-dark rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        <PhoneInput
+                            country={'se'}
                             value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
+                            onChange={(phone) => setPhone(phone)}
+                            inputClass="p-3 bg-background border text-typography-dark border-typography-dark rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            inputStyle={{ width: '100%' }}
                         />
                         {error && <p className="text-red-500">{error}</p>}
                         <button type="submit" className="bg-primary hover:bg-primary-dark text-typography py-3 rounded transition-colors">
