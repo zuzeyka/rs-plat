@@ -97,20 +97,19 @@ const Services = () => {
                                 {t('services.calculate')}
                             </Button>
                         </form>
+                        {cost !== null && (
+                            <motion.div
+                                className="mt-6 p-4 rounded shadow text-center"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <p className="text-xl font-semibold">
+                                    {t('services.estimatedCost')}: ${cost.toLocaleString()}
+                                </p>
+                            </motion.div>
+                        )}
                     </div>
-
-                    {cost !== null && (
-                        <motion.div
-                            className="mt-6 p-4 rounded shadow text-center"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <p className="text-xl font-semibold">
-                                {t('services.estimatedCost')}: ${cost.toLocaleString()}
-                            </p>
-                        </motion.div>
-                    )}
                 </div>
             </div>
         </section>

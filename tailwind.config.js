@@ -3,6 +3,7 @@ module.exports = {
     darkMode: ['class'],
     content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
     prefix: '',
+    safelist: ['bg-primary-dark', 'text-primary-dark', 'bg-typography-dark', 'text-typography-dark'],
     theme: {
         container: {
             center: true,

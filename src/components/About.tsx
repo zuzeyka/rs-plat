@@ -34,8 +34,8 @@ const About = () => {
             <div className="container lg:flex mx-auto p-10 lg:p-20 relative">
                 <div className="absolute inset-0 bg-cover bg-black opacity-50 rounded-3xl bg-center w-full h-full z-0"></div>
                 <GeometricDecorations
-                    color="primary"
-                    secondaryColor="primary-light"
+                    color="primary-dark"
+                    secondaryColor="secondary"
                     horizontalCount={0}
                     verticalCount={0}
                     plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10}
