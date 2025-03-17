@@ -74,6 +74,24 @@ button:focus-visible {
     z-index: 0;
 }
 
+.vertical-line::before,
+.vertical-line::after {
+    content: '×';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: var(--tw-color-secondary-dark);
+}
+
+.vertical-line::before {
+    top: 25%;
+}
+
+.vertical-line::after {
+    top: 75%;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
