@@ -82,6 +82,7 @@ button:focus-visible {
     transform: translateX(-50%);
     font-size: 1.5rem;
     color: var(--tw-color-secondary-dark);
+    animation: slideDown 8s infinite alternate; /* Анимация применяется только к крестам */
 }
 
 .vertical-line::before {
@@ -90,6 +91,15 @@ button:focus-visible {
 
 .vertical-line::after {
     top: 75%;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translate(-50%, -100px);
+    }
+    100% {
+        transform: translate(-50%, 100px);
+    }
 }
 
 @media (prefers-color-scheme: light) {
