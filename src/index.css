@@ -68,7 +68,7 @@ button:focus-visible {
 
 .vertical-line {
     position: fixed;
-    top: 1em;
+    top: 0;
     width: 0.21em;
     height: 100vh;
     z-index: 0;
