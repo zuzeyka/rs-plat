@@ -82,7 +82,7 @@ button:focus-visible {
     transform: translateX(-50%);
     font-size: 1.5rem;
     color: var(--tw-color-secondary-dark);
-    animation: slideDown 8s infinite alternate; /* Анимация применяется только к крестам */
+    animation: slideDown 8s infinite alternate;
 }
 
 .vertical-line::before {
