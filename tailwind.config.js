@@ -20,9 +20,9 @@ module.exports = {
                     dark: '#003F87',
                 },
                 secondary: {
-                    light: '#FFE066',
-                    DEFAULT: '#FFD700',
-                    dark: '#CCAC00',
+                    light: '#E6FF66',
+                    DEFAULT: '#CCFF00',
+                    dark: '#99CC00',
                 },
                 typography: {
                     DEFAULT: '#f8f9fa',
