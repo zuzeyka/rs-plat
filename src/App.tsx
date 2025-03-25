@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Contacts from './components/Contacts';
 import ScrollToTop from './ScrollToTop';
 import Footer from './components/Footer';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <Services />
             <Contacts />
             <Footer />
+            <ThemeToggle />
             <ScrollToTop />
         </>
     );
