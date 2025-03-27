@@ -18,13 +18,24 @@
     font-weight: 400;
 
     color-scheme: light dark;
-    background-color: #242424;
+    background-color: var(--color-background);
+    color: var(--color-typography);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --color-background: #ffffff;
+    --color-typography: #212529;
+    --color-secondary: #ccff00;
+}
+
+.dark {
+    --color-background: #242424;
+    --color-typography: #f8f9fa;
+    --color-secondary: #99cc00;
 }
 
 body {
@@ -32,6 +43,11 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-typography);
+    transition:
+        background-color 0.3s,
+        color 0.3s;
 }
 
 h1,

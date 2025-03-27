@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ['class'],
+    darkMode: 'class',
     content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
     prefix: '',
     safelist: ['bg-primary-dark', 'text-primary-dark', 'bg-typography-dark', 'text-typography-dark'],
@@ -25,11 +25,13 @@ module.exports = {
                     dark: '#99CC00',
                 },
                 typography: {
-                    DEFAULT: '#f8f9fa',
-                    secondary: '#acacac',
-                    dark: '#212529',
+                    DEFAULT: '#212529',
+                    dark: '#f8f9fa',
                 },
-                background: '#212529',
+                background: {
+                    light: '#ffffff',
+                    dark: '#242424',
+                },
                 foreground: '#f8f9fa',
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
