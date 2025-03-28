@@ -30,7 +30,7 @@ const Services = () => {
     };
 
     return (
-        <section id="services" className="w-full mx-auto my-20 pb-20 text-center text-typography border-b-4 border-primary">
+        <section id="services" className="w-full mx-auto my-20 pb-20 text-center text-secondary border-b-4 border-primary">
             <h2 className="lg:text-7xl text-3xl font-bold text-center mb-4">{t('services.title')}</h2>
             <h3 className="text-center lg:text-3xl text-lg mb-10">{t('services.description')}</h3>
 

@@ -4,7 +4,7 @@ const Hero = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="home" className="h-screen flex flex-col items-center justify-center bg-cover bg-center text-typography backgroundImage">
+        <section id="home" className="h-screen flex flex-col items-center justify-center bg-cover bg-center text-typography-dark backgroundImage">
             <div
                 className="absolute inset-0 bg-black opacity-50 z-10 bg-cover bg-center w-full h-full"
                 style={{ backgroundImage: "url('home.png')" }}
