@@ -69,7 +69,7 @@ const ContactsSection = () => {
                 </motion.div>
 
                 <motion.div
-                    className="w-full md:w-1/2 bg-typography text-primary z-10 rounded-lg shadow-2xl p-8"
+                    className="w-full md:w-1/2 bg-background text-primary z-10 rounded-lg shadow-2xl p-8"
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}

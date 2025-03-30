@@ -22,9 +22,9 @@ const Objects = () => {
     };
 
     return (
-        <section id="objects" className="w-full mx-auto border-b-4 border-primary py-20 text-center text-typography-dark">
+        <section id="objects" className="w-full mx-auto border-b-4 border-primary py-20 text-center text-secondary">
             <h2 className="lg:text-7xl text-3xl mb-10">{t('objects.title')}</h2>
-            <h3 className="lg:text-3xl text-lg font-bold text-typography-dark mb-4">{t('objects.subtitle')}</h3>
+            <h3 className="lg:text-3xl text-lg font-bold text-secondary mb-4">{t('objects.subtitle')}</h3>
 
             <div className="grid md:grid-cols-3 gap-6">
                 {objects.map((object, index) => (
