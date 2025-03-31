@@ -66,7 +66,7 @@ const Services = () => {
                                 </label>
                                 <select
                                     id="service"
-                                    className="w-full bg-background p-2 border border-gray-300 rounded"
+                                    className="w-full bg-white text-black dark:bg-black dark:text-white p-2 border border-gray-300 rounded"
                                     value={selectedServiceId}
                                     onChange={(e) => setSelectedServiceId(Number(e.target.value))}
                                 >
