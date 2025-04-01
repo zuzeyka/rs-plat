@@ -5,7 +5,7 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <footer className="bg-typography-dark text-typography py-12">
+        <footer className="bg-white dark:bg-black dark:text-white text-typography py-12">
             <div className="container mx-auto px-4">
                 <motion.div
                     className="flex flex-col md:flex-row justify-between items-center"
@@ -14,12 +14,12 @@ const Footer = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <div className="mb-6 md:mb-0">
-                        <h1 className="lg:text-2xl text-lg font-bold text-typography">{t('footer.companyName', 'Construction Co.')}</h1>
+                        <h1 className="lg:text-2xl text-lg font-bold text-secondary">{t('footer.companyName', 'Construction Co.')}</h1>
                         <p className="lg:text-sm text-xs mt-2">{t('footer.companyDescription', 'Building excellence since 1990')}</p>
                     </div>
                     <div className="flex flex-col md:flex-row md:items-center md:space-x-10">
                         <div className="mb-4 md:mb-0">
-                            <h3 className="font-semibold text-typography mb-2">{t('footer.quickLinks', 'Quick Links')}</h3>
+                            <h3 className="font-semibold text-secondary mb-2">{t('footer.quickLinks', 'Quick Links')}</h3>
                             <ul className="space-y-1 lg:text-sm text-xs">
                                 <li>
                                     <a href="#home" className="hover:text-typography-secondary transition-colors">
