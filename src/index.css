@@ -29,13 +29,13 @@
 
     --color-background: #ffffff;
     --color-typography: #212529;
-    --color-secondary: #ccff00;
+    --color-accent: #ccff00;
 }
 
 .dark {
     --color-background: #242424;
     --color-typography: #f8f9fa;
-    --color-secondary: #99cc00;
+    --color-accent: #99cc00;
 }
 
 body {

@@ -60,14 +60,6 @@ const GeometricDecorations: React.FC<GeometricDecorationsProps> = ({
                 );
             })}
 
-            <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className={'absolute bottom-60 z-0 right-60  w-1 h-40 bg-' + secondaryColor}
-                style={{ transformOrigin: 'bottom right' }}
-            />
-
             {[...Array(plusCount)].map((_, index) => {
                 const topPos = Math.random() * 80 + 10;
                 const leftPos = Math.random() * 80 + 10;
@@ -90,41 +82,6 @@ const GeometricDecorations: React.FC<GeometricDecorationsProps> = ({
                     </motion.div>
                 );
             })}
-
-            <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
-                className={'absolute top-10 right-10 z-0 text-4xl font-bold text-' + color}
-            >
-                +
-            </motion.div>
-
-            <motion.div
-                initial={{ scale: 0.8, opacity: 0.6 }}
-                animate={{ scale: [0.8, 1.2, 0.8], opacity: [0.6, 1, 0.6] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className={'absolute rounded-full z-0 bg-' + secondaryColor}
-                style={{
-                    width: '40px',
-                    height: '40px',
-                    top: '20%',
-                    left: '80%',
-                }}
-            />
-
-            <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className={'absolute z-0 bg-' + secondaryColor}
-                style={{
-                    width: '50px',
-                    height: '50px',
-                    top: '70%',
-                    left: '10%',
-                }}
-            />
         </div>
     );
 };

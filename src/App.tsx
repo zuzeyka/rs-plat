@@ -13,8 +13,8 @@ import ThemeToggle from './components/ThemeToggle';
 function App() {
     return (
         <>
-            <div className="vertical-line lg:left-[10vh] left-[2vh] bg-secondary"></div>
-            <div className="vertical-line lg:right-[10vh] right-[2vh] bg-secondary"></div>
+            <div className="vertical-line lg:left-[10vh] left-[2vh] bg-accent"></div>
+            <div className="vertical-line lg:right-[10vh] right-[2vh] bg-accent"></div>
             <Navbar />
             <Hero />
             <About />

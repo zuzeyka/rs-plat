@@ -3,7 +3,15 @@ module.exports = {
     darkMode: 'class',
     content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
     prefix: '',
-    safelist: ['bg-primary-dark', 'text-primary-dark', 'bg-typography-dark', 'text-typography-dark'],
+    safelist: [
+        'bg-primary-dark',
+        'text-primary-dark',
+        'bg-typography-dark',
+        'text-typography-dark',
+        'bg-accent',
+        'bg-accent-light',
+        'bg-accent-dark',
+    ],
     theme: {
         container: {
             center: true,
@@ -20,6 +28,11 @@ module.exports = {
                     dark: '#003F87',
                 },
                 secondary: {
+                    light: '#FFE066',
+                    DEFAULT: '#FFD700',
+                    dark: '#CCAC00',
+                },
+                accent: {
                     light: '#E6FF66',
                     DEFAULT: '#CCFF00',
                     dark: '#99CC00',
@@ -43,10 +56,6 @@ module.exports = {
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',
                     foreground: 'hsl(var(--muted-foreground))',
-                },
-                accent: {
-                    DEFAULT: 'hsl(var(--accent))',
-                    foreground: 'hsl(var(--accent-foreground))',
                 },
                 popover: {
                     DEFAULT: 'hsl(var(--popover))',
