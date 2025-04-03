@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import PhoneInput from 'react-phone-input-2';
 import GeometricDecorations from './GeometricDecorations';
+import { Button } from './ui/button';
 
 const ContactsSection = () => {
     const { t } = useTranslation();
@@ -82,13 +83,13 @@ const ContactsSection = () => {
                             country={'se'}
                             value={phone}
                             onChange={(phone) => setPhone(phone)}
-                            inputClass="p-3 bg-background border text-typography-dark border-typography-dark rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            inputClass="p-3 bg-background border text-typography border-typography-dark rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             inputStyle={{ width: '100%' }}
                         />
                         {error && <p className="text-red-500">{error}</p>}
-                        <button type="submit" className="bg-primary hover:bg-primary-dark text-typography py-3 rounded transition-colors">
+                        <Button type="submit" className="bg-primary hover:bg-primary-dark text-typography-dark py-3 rounded transition-colors">
                             {t('contacts.callbackSubmit')}
-                        </button>
+                        </Button>
                     </form>
                     {callbackSuccess && (
                         <motion.div
