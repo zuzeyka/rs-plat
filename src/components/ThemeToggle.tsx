@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { MoonIcon, SunIcon } from 'lucide-react';
 
 const ThemeToggle = () => {
     const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
@@ -33,12 +34,12 @@ const ThemeToggle = () => {
             {isVisible && (
                 <motion.button
                     onClick={toggleTheme}
-                    className="fixed bottom-6 left-6 bg-primary text-black p-2 rounded-full shadow-lg hover:bg-primary-dark transition-all"
+                    className="fixed bottom-6 left-6 bg-primary text-black p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                 >
-                    {theme === 'light' ? '🌙' : '☀️'}
+                    {theme === 'light' ? <MoonIcon /> : <SunIcon />}
                 </motion.button>
             )}
         </div>
