@@ -1,19 +1,20 @@
 {
     "navbar": {
-        "home": "Hem",
+        "home": "Välkommen",
         "about": "Om Oss",
         "objects": "Objekt",
-        "services": "Tjänster",
+        "services": "Våra tjänster",
         "contacts": "Kontakter"
     },
     "hero": {
-        "title": "Välkommen till byggföretag: RS-Plat",
-        "subtitle": "Ett byggföretag som utvecklas snabbt på den svenska marknaden för moderna fastigheter. Företaget skapades av ett team av proffs inom området bostads och kommersiellt byggande."
+        "title": "Välkommen till RS-PLÅT AB! ",
+        "subtitle": "Vi är en ung och ambitiös firma som startade vår resa 2023 och redan har gjort oss ett namn i Umeå. Vår multinationella team av erfarna yrkesmän levererar högkvalitativa tak- och plåtarbeten med precision och hastighet. Oavsett om du är en privatkund, ett företag eller en kommunal beställare, kan du lita på oss för hållbara och estetiska lösningar.",
+        "contact": "Låt oss ta hand om ditt tak – kontakta oss idag!"
     },
     "about": {
         "title": "RS-Plat",
         "subtitle": "Byggföretaget",
-        "description": "Ett byggföretag som utvecklas snabbt på den svenska fastighetsmarknaden. Företaget grundades av ett team av proffs inom bostads- och kommersiellt byggande. Företagets anställdas framgångsrika erfarenhet och professionalism har gjort det möjligt att skapa en effektiv och pålitlig projektledningsstruktur, garanterad arbetskvalitet och tydliga genomförandetider.",
+        "description": "Ett ungt, ambitiöst, snabbt växande team. Ett multinationellt team av proffs. Erfarenhet av arbete med privata uppdragsgivare och Umeå kommun.",
         "families": "Familjer flyttade in i sina lägenheter",
         "objects": "Hus har redan tagits i bruk",
         "commercial": "Upplåtna kommersiella lokaler där verksamhet bedrivs",
@@ -54,36 +55,36 @@
         "list": [
             {
                 "id": 1,
-                "title": "Bostadsbyggande",
-                "description": "Högkvalitativa byggtjänster för bostadsprojekt.",
+                "title": "Takbyte",
+                "description": "Byt ut din gamla takbeläggning mot en ny för att förbättra ditt hems skydd och energieffektivitet.",
                 "unitCost": 1200,
                 "icon": "🏠"
             },
             {
                 "id": 2,
-                "title": "Kommersiellt byggande",
-                "description": "Expertis inom kommersiella byggprojekt.",
+                "title": "Takarbete",
+                "description": "Vi utför takarbeten av högsta kvalitet för kommersiella fastigheter, så att du kan känna dig trygg i att ditt tak klarar alla väderförhållanden.",
                 "unitCost": 1500,
                 "icon": "🏢"
             },
             {
                 "id": 3,
-                "title": "Renovering",
-                "description": "Renovering och ombyggnadstjänster.",
+                "title": "Takpapp",
+                "description": "Vi monterar takpapp av högsta kvalitet för att ge ditt hem eller företag ett säkert och energieffektivt tak.",
                 "unitCost": 800,
                 "icon": "🔨"
             },
             {
                 "id": 4,
-                "title": "Inredningsdesign",
-                "description": "Modern inredningsdesign för ditt utrymme.",
+                "title": "Snörasskydd",
+                "description": "Våra snörasskydd skyddar din fastighet från snöskred och is, vilket ökar säkerheten och förlänger byggnadens livslängd.",
                 "unitCost": 500,
                 "icon": "🛋️"
             },
             {
                 "id": 5,
-                "title": "Projektledning",
-                "description": "Fullständig projektledningstjänster.",
+                "title": "Plåtslageri",
+                "description": "Vi tillverkar och monterar plåtbeklädnader och takkonstruktioner av högsta kvalitet för att ge ditt hem eller företag ett säkert och energieffektivt tak.",
                 "unitCost": 300,
                 "icon": "📊"
             }

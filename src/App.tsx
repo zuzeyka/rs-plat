@@ -18,8 +18,8 @@ function App() {
             <Navbar />
             <Hero />
             <About />
-            <Objects />
             <Services />
+            <Objects />
             <Contacts />
             <Footer />
             <ThemeToggle />

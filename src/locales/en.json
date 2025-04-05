@@ -1,19 +1,20 @@
 {
     "navbar": {
-        "home": "Home",
+        "home": "Welcome",
         "about": "About Us",
         "objects": "Objects",
-        "services": "Services",
+        "services": "Our Services",
         "contacts": "Contacts"
     },
     "hero": {
-        "title": "Welcome to construction company: RS-Plat",
-        "subtitle": "A construction company that develops rapidly in the Swedish market for modern properties.The company was created by a team of professionals in the area of ​​housing and commercial construction."
+        "title": "Welcome to RS-PLÅT AB!",
+        "subtitle": "We are a young and ambitious company that started our journey in 2023 and has already made a name for itself in Umeå. Our multinational team of skilled professionals delivers high-quality roofing and metalwork with precision and speed. Whether you are a private customer, a business, or a municipal client, you can rely on us for durable and aesthetically pleasing solutions.",
+        "contact": "Let us take care of your roof – contact us today!"
     },
     "about": {
         "title": "RS-Plat",
         "subtitle": "The construction company",
-        "description": "A construction company that is rapidly developing in the Swedish real estate market. The company was founded by a team of professionals in the field of residential and commercial construction. The successful experience and professionalism of the company's employees have made it possible to create an effective and reliable project management structure, guaranteed work quality, and clear implementation deadlines.",
+        "description": "A young, ambitious, fast-growing team. A multinational team of professionals. Experience working with private clients and Umeå municipality.",
         "families": "Families moved into their apartments",
         "objects": "House has already been taken in use",
         "commercial": "Leased commercial premises where operations are conducted",
@@ -54,36 +55,36 @@
         "list": [
             {
                 "id": 1,
-                "title": "Residential Construction",
-                "description": "High quality building services for residential projects.",
+                "title": "Roof replacement",
+                "description": "Replace your old roof coating with a new one to improve your home's protection and energy efficiency.",
                 "unitCost": 1200,
                 "icon": "🏠"
             },
             {
                 "id": 2,
-                "title": "Commercial Construction",
-                "description": "Expertise in commercial building projects.",
+                "title": "Roofing work",
+                "description": "We carry out roof work of the highest quality for commercial properties, so you can feel confident that your roof can withstand all weather conditions.",
                 "unitCost": 1500,
                 "icon": "🏢"
             },
             {
                 "id": 3,
-                "title": "Renovation",
-                "description": "Renovation and remodeling services.",
+                "title": "Roofing felt",
+                "description": "We mount the highest quality roofing board to give your home or company a safe and energy efficient roof.",
                 "unitCost": 800,
                 "icon": "🔨"
             },
             {
                 "id": 4,
-                "title": "Interior Design",
-                "description": "Modern interior design for your space.",
+                "title": "Snow avalanche protection",
+                "description": "Our lace protection protects your property from snowshops and ice, which increases safety and extends the life of the building.",
                 "unitCost": 500,
                 "icon": "🛋️"
             },
             {
                 "id": 5,
-                "title": "Project Management",
-                "description": "Complete project management services.",
+                "title": "Sheet metal worker",
+                "description": "We manufacture and assemble sheet metal cladding and roof structures of the highest quality to give your home or company a safe and energy efficient roof.",
                 "unitCost": 300,
                 "icon": "📊"
             }
@@ -93,7 +94,7 @@
         "title": "Get in Touch",
         "description": "We are here to help you with your construction needs. Reach out to us using the following contact details.",
         "address": "Address",
-        "addressValue": "Kvarnvägen 7 , 903 20 UMEÅ",
+        "addressValue": "Förrådsvägen 16D, Umeå",
         "phone": "Phone",
         "phoneValue": "+46 70 041 45 91",
         "email": "Email",
