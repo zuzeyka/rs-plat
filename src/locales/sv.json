@@ -15,10 +15,10 @@
         "title": "RS-Plat",
         "subtitle": "Byggföretaget",
         "description": "Ett ungt, ambitiöst, snabbt växande team. Ett multinationellt team av proffs. Erfarenhet av arbete med privata uppdragsgivare och Umeå kommun.",
-        "families": "Familjer flyttade in i sina lägenheter",
-        "objects": "Hus har redan tagits i bruk",
-        "commercial": "Upplåtna kommersiella lokaler där verksamhet bedrivs",
-        "cities": "Städer där byggandet aktivt pågår"
+        "guaranteeTitle": "Vi garanterar:",
+        "point1": "Snabba och effektiva lösningar",
+        "point2": "Hög kvalitet och noggrannhet i varje detalj",
+        "point3": "Professionellt bemötande och pålitlighet"
     },
     "objects": {
         "title": "Objekt",

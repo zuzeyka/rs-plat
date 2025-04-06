@@ -1,33 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 import GeometricDecorations from '@/components/GeometricDecorations';
 
 const About = () => {
     const { t } = useTranslation();
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const section = document.getElementById('about');
-            if (section) {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    setIsVisible(true);
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    const stats = [
-        { id: 1, value: 1150, label: t('about.families') },
-        { id: 2, value: 23, label: t('about.objects') },
-        { id: 3, value: 30, label: t('about.commercial') },
-        { id: 4, value: 4, label: t('about.cities') },
-    ];
 
     return (
         <section id="about" className="relative w-full text-center text-typography-dark">
@@ -46,26 +21,13 @@ const About = () => {
                     <p className="lg:text-2xl text-lg z-10 leading-relaxed mb-10">{t('about.description')}</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-10 w-full z-10">
-                    {stats.map((stat) => (
-                        <motion.div
-                            key={stat.id}
-                            className="rounded-lg p-6 z-10"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: stat.id * 0.2 }}
-                        >
-                            <motion.h3
-                                className="text-4xl font-bold z-10"
-                                initial={{ opacity: 0 }}
-                                animate={isVisible ? { opacity: 1 } : {}}
-                                transition={{ duration: 0.8, delay: stat.id * 0.3 }}
-                            >
-                                ~{isVisible ? stat.value : '0'}+
-                            </motion.h3>
-                            <p className="text-lg z-10">{stat.label}</p>
-                        </motion.div>
-                    ))}
+                <div className="w-full z-10 text-left p-4 text-left lg:p-10 bg-background rounded-lg shadow-lg relative">
+                    <h3 className="lg:text-3xl text-2xl text-center font-bold mb-6">{t('about.guaranteeTitle', 'Vi garanterar:')}</h3>
+                    <ul className="space-y-4 lg:text-xl text-lg">
+                        <li>✅ {t('about.point1')}</li>
+                        <li>✅ {t('about.point2')}</li>
+                        <li>✅ {t('about.point3')}</li>
+                    </ul>
                 </div>
             </div>
         </section>

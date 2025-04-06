@@ -15,10 +15,10 @@
         "title": "RS-Plat",
         "subtitle": "The construction company",
         "description": "A young, ambitious, fast-growing team. A multinational team of professionals. Experience working with private clients and Umeå municipality.",
-        "families": "Families moved into their apartments",
-        "objects": "House has already been taken in use",
-        "commercial": "Leased commercial premises where operations are conducted",
-        "cities": "Cities where construction is actively going on"
+        "guaranteeTitle": "We guarantee:",
+        "point1": "Fast and efficient solutions",
+        "point2": "High quality and attention to detail",
+        "point3": "Professional service and reliability"
     },
     "objects": {
         "title": "Objects",
