@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="lg:text-2xl z-10 text-lg text-center">{t('hero.subtitle')}</p>
             <a
                 href="#contacts"
-                className="lg:text-2xl z-10 text-lg text-center bg-primary hover:bg-primary-dark rounded-2xl mx-4 absolute bottom-10 text-typography-dark rounded-lg px-4 py-2 mt-6 hover:bg-primary-dark transition duration-300"
+                className="lg:text-2xl z-10 text-lg text-center bg-primary hover:bg-primary-dark rounded-xl mx-4 absolute bottom-10 text-typography-dark rounded-lg px-4 py-2 mt-6 hover:bg-primary-dark transition duration-300"
             >
                 {t('hero.contact')}
             </a>
