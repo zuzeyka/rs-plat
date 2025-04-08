@@ -26,19 +26,23 @@
         "list": [
             {
                 "city": "Umeå",
-                "title": "Bostadskomplex 'Sunny'"
+                "title": "Bostadskomplex 'Sunny'",
+                "link": "sunny"
             },
             {
                 "city": "Stockholm",
-                "title": "Kontorscenter 'Prestige'"
+                "title": "Kontorscenter 'Prestige'",
+                "link": "prestige"
             },
             {
                 "city": "Göteborg",
-                "title": "Stugby 'Green Park'"
+                "title": "Stugby 'Green Park'",
+                "link": "green-park"
             },
             {
                 "city": "Malmö",
-                "title": "Sportcenter 'Sport'"
+                "title": "Sportcenter 'Sport'",
+                "link": "sport"
             }
         ]
     },

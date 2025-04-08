@@ -26,19 +26,23 @@
         "list": [
             {
                 "city": "Umeå",
-                "title": "Residential Complex «Sunny»"
+                "title": "Residential Complex «Sunny»",
+                "link": "sunny"
             },
             {
                 "city": "Stockholm",
-                "title": "Office Center «Prestige»"
+                "title": "Office Center «Prestige»",
+                "link": "prestige"
             },
             {
                 "city": "Göteborg",
-                "title": "Cottage Town «Green Park»"
+                "title": "Cottage Town «Green Park»",
+                "link": "green-park"
             },
             {
                 "city": "Malmö",
-                "title": "Sports Center «Sport»"
+                "title": "Sports Center «Sport»",
+                "link": "sport"
             }
         ]
     },

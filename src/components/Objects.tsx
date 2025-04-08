@@ -4,7 +4,7 @@ import { MapPinIcon } from 'lucide-react';
 
 const Objects = () => {
     const { t } = useTranslation();
-    const objects = t('objects.list', { returnObjects: true }) as { city: string; title: string }[];
+    const objects = t('objects.list', { returnObjects: true }) as { city: string; title: string; link: string }[];
 
     const imageVariants = {
         initial: { x: 0, y: 0, scale: 1 },
@@ -28,8 +28,11 @@ const Objects = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
                 {objects.map((object, index) => (
-                    <motion.div
+                    <motion.a
                         key={index}
+                        href={object.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="relative overflow-hidden rounded-lg cursor-pointer lg:p-10 px-8 lg:bg-transparent bg-black"
                         variants={cardVariant}
                         initial="initial"
@@ -58,7 +61,7 @@ const Objects = () => {
                             variants={imageVariants}
                             transition={{ duration: 0.5 }}
                         />
-                    </motion.div>
+                    </motion.a>
                 ))}
             </div>
         </section>
