@@ -19,10 +19,10 @@ const ObjectPage: React.FC = () => {
 
     useEffect(() => {
         const importMedia = () => {
-            const imageCount = Number(t(`projects.${campaignId}.image-count`));
-            const videoCount = Number(t(`projects.${campaignId}.video-count`, { defaultValue: 0 }));
+            const imageCount = Number(t(`objects.${campaignId}.image-count`));
+            const videoCount = Number(t(`objects.${campaignId}.video-count`, { defaultValue: 0 }));
 
-            const basePath = `/projects/${campaignId}/`;
+            const basePath = `/objects/${campaignId}/`;
             const imagesArray = Array.from({ length: imageCount }, (_, index) => `${basePath}${index}.jpg`);
             const videosArray = Array.from({ length: videoCount }, (_, index) => `${basePath}video${index}.mp4`);
             setMedia([...imagesArray, ...videosArray]);
@@ -31,7 +31,7 @@ const ObjectPage: React.FC = () => {
         importMedia();
     }, [campaignId, t]);
 
-    const campaignData = t(`projects.${campaignId}.post-text`, {
+    const campaignData = t(`objects.${campaignId}.post-text`, {
         returnObjects: true,
     }) as {
         event_title: string;
