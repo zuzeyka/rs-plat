@@ -5,7 +5,7 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <footer className="bg-typography-dark dark:bg-black dark:text-white text-typography py-12">
+        <footer className="bg-typography dark:bg-black dark:text-white text-typography-dark py-12 relative">
             <div className="container mx-auto px-4">
                 <motion.div
                     className="flex flex-col md:flex-row justify-between items-center"

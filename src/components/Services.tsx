@@ -39,7 +39,7 @@ const Services = () => {
                     {services.map((service, index) => (
                         <motion.div
                             key={service.id}
-                            className="rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow"
+                            className="rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow bg-typography-dark dark:bg-typography"
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -56,8 +56,8 @@ const Services = () => {
                     ))}
                 </div>
 
-                <div className="rounded-lg shadow-lg p-8">
-                    <div className="sticky top-10">
+                <div className="rounded-lg bg-typography-dark dark:bg-typography shadow-lg p-8">
+                    <div className="sticky top-40">
                         <h3 className="lg:text-4xl text-2xl font-bold mb-4">{t('services.calculatorTitle')}</h3>
                         <form onSubmit={handleCalculate} className="space-y-4">
                             <div>

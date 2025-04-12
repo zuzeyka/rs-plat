@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <defs>
+    <pattern id="linePattern" patternUnits="userSpaceOnUse" width="90" height="5">
+      <path d="M10 0 L10 20" stroke="#333" stroke-width="3" stroke-dasharray="9,4" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#linePattern)" />
+</svg>

@@ -50,6 +50,20 @@ body {
         color 0.3s;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('decorative-lines.svg');
+    background-repeat: repeat;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
 h1,
 h2,
 h3 {

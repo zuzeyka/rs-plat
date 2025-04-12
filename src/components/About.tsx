@@ -21,7 +21,7 @@ const About = () => {
                     <p className="lg:text-2xl text-lg z-10 leading-relaxed mb-10">{t('about.description')}</p>
                 </div>
 
-                <div className="w-full z-10 text-left p-4 text-left lg:p-10 bg-background rounded-lg shadow-lg relative">
+                <div className="w-full z-10 text-left p-4 text-left lg:p-10 bg-background rounded-lg relative">
                     <h3 className="lg:text-3xl text-2xl text-center font-bold mb-6">{t('about.guaranteeTitle', 'Vi garanterar:')}</h3>
                     <ul className="space-y-4 lg:text-xl text-lg">
                         <li>✅ {t('about.point1')}</li>
