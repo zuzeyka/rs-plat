@@ -44,12 +44,17 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
-    overflow-x: hidden;
     background-color: var(--color-background);
     color: var(--color-typography);
     transition:
         background-color 0.3s,
         color 0.3s;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
 }
 
 body::before {
