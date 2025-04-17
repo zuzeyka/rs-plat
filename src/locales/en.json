@@ -23,28 +23,22 @@
     "objects": {
         "title": "Objects",
         "subtitle": "Our projects",
-        "list": [
-            {
-                "city": "Umeå",
-                "title": "Residential Complex «Sunny»",
-                "link": "sunny"
-            },
-            {
-                "city": "Stockholm",
-                "title": "Office Center «Prestige»",
-                "link": "prestige"
-            },
-            {
-                "city": "Göteborg",
-                "title": "Cottage Town «Green Park»",
-                "link": "green-park"
-            },
-            {
-                "city": "Malmö",
-                "title": "Sports Center «Sport»",
-                "link": "sport"
-            }
-        ]
+        "sunny": {
+            "city": "Umeå",
+            "title": "Residential Complex «Sunny»"
+        },
+        "prestige": {
+            "city": "Stockholm",
+            "title": "Office Center «Prestige»"
+        },
+        "greenPark": {
+            "city": "Göteborg",
+            "title": "Cottage Town «Green Park»"
+        },
+        "sport": {
+            "city": "Malmö",
+            "title": "Sports Center «Sport»"
+        }
     },
     "services": {
         "title": "Our Services",

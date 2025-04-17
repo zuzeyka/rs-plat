@@ -2,62 +2,91 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MapPinIcon } from 'lucide-react';
 
+interface ObjectItem {
+    key: string;
+    title: string;
+    city: string;
+    imageCount: number;
+    link: string;
+}
+
 const Objects = () => {
     const { t } = useTranslation();
-    const objects = t('objects.list', { returnObjects: true }) as { city: string; title: string; link: string }[];
+
+    const raw = t('objects', { returnObjects: true }) as Record<string, any>;
+
+    const title: string = raw.title;
+    const subtitle: string = raw.subtitle;
+
+    const keys = Object.keys(raw).filter((k) => k !== 'title' && k !== 'subtitle');
+
+    const objects: ObjectItem[] = keys.map((key) => {
+        const item = raw[key];
+        return {
+            key,
+            title: item.title,
+            city: item.city,
+            imageCount: Number(item['image-count']),
+            link: `/${key}`,
+        };
+    });
 
     const imageVariants = {
         initial: { x: 0, y: 0, scale: 1 },
         hover: { x: 20, y: 20, scale: 1.1 },
     };
-
     const overlayVariants = {
         initial: { x: 0, y: 0, opacity: 0 },
         hover: { x: -20, y: -20, opacity: 1 },
     };
-
     const cardVariant = {
         initial: { opacity: 0, y: 50 },
         animate: { opacity: 1, y: 0 },
     };
 
     return (
-        <section id="objects" className="w-full relative mx-auto py-20 text-center text-secondary">
-            <h2 className="lg:text-7xl text-3xl mb-10">{t('objects.title')}</h2>
-            <h3 className="lg:text-3xl text-lg font-bold text-secondary mb-4">{t('objects.subtitle')}</h3>
+        <section id="objects" className="w-full relative mx-auto py-20 px-4 text-center text-secondary">
+            <h2 className="lg:text-7xl text-3xl mb-4">{title}</h2>
+            <h3 className="lg:text-3xl text-lg font-bold mb-10">{subtitle}</h3>
 
             <div className="grid md:grid-cols-3 gap-6">
-                {objects.map((object, index) => (
+                {objects.map((obj, idx) => (
                     <motion.a
-                        key={index}
-                        href={object.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative overflow-hidden rounded-lg cursor-pointer lg:p-10 px-8 lg:bg-transparent bg-black"
+                        key={obj.key}
+                        href={obj.link}
+                        className="relative overflow-hidden rounded-lg cursor-pointer bg-black lg:bg-transparent lg:p-10 p-8"
                         variants={cardVariant}
                         initial="initial"
                         animate="animate"
-                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                        transition={{ duration: 0.5, delay: idx * 0.2 }}
                         whileHover="hover"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <h3 className="relative lg:absolute top-64 -left-36 text-typography-dark text-xl font-bold transform -rotate-90 lg:opacity-0 whitespace-nowrap">
-                            {object.title}
+                        <h3 className="relative lg:absolute lg:top-64 lg:-left-36 text-xl font-bold text-typography-dark transform -rotate-90 lg:opacity-0 whitespace-nowrap">
+                            {obj.title}
                         </h3>
-                        <div className="relative lg:absolute -top-2 -left-22 flex items-center justify-center lg:opacity-0">
-                            <MapPinIcon></MapPinIcon>
-                            <h4 className="text-typography-dark text-lg font-bold transform">{object.city}</h4>
+                        <div className="relative lg:absolute lg:-top-2 lg:-left-22 flex items-center justify-center lg:opacity-0 mb-4">
+                            <MapPinIcon />
+                            <h4 className="text-lg font-bold text-typography-dark ml-2">{obj.city}</h4>
                         </div>
-                        <motion.div className="absolute inset-0 bg-black bg-opacity-50" variants={overlayVariants} transition={{ duration: 0.5 }}>
-                            <h3 className="relative top-60 -left-36 text-typography-dark text-xl font-bold transform -rotate-90">{object.title}</h3>
-                            <div className="relative -top-2 -left-22 flex items-center justify-center">
-                                <MapPinIcon></MapPinIcon>
-                                <h4 className="text-typography-dark text-lg font-bold transform">{object.city}</h4>
+
+                        <motion.div
+                            className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center"
+                            variants={overlayVariants}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <h3 className="text-xl font-bold text-typography-dark transform -rotate-90 mb-4">{obj.title}</h3>
+                            <div className="flex items-center">
+                                <MapPinIcon />
+                                <h4 className="text-lg font-bold text-typography-dark ml-2">{obj.city}</h4>
                             </div>
                         </motion.div>
+
                         <motion.img
-                            src={`objects/${index}.png`}
-                            alt={object.title}
-                            className="relative w-full h-full object-cover"
+                            src={`objects/${obj.key}.png`}
+                            alt={obj.title}
+                            className="w-full h-full object-cover"
                             variants={imageVariants}
                             transition={{ duration: 0.5 }}
                         />

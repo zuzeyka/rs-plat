@@ -52,14 +52,12 @@ const ContactsSection = () => {
                         </div>
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.phone')}</h3>
-                            {/* Ссылка для набора номера */}
                             <a href={`tel:${t('contacts.phoneValue')}`} className="hover:underline text-secondary">
                                 {t('contacts.phoneValue')}
                             </a>
                         </div>
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.email')}</h3>
-                            {/* Ссылка для отправки письма */}
                             <a href={`mailto:${t('contacts.emailValue')}`} className="hover:underline text-secondary">
                                 {t('contacts.emailValue')}
                             </a>

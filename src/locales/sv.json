@@ -23,28 +23,26 @@
     "objects": {
         "title": "Objekt",
         "subtitle": "Våra projekt",
-        "list": [
-            {
-                "city": "Umeå",
-                "title": "Bostadskomplex 'Sunny'",
-                "link": "sunny"
-            },
-            {
-                "city": "Stockholm",
-                "title": "Kontorscenter 'Prestige'",
-                "link": "prestige"
-            },
-            {
-                "city": "Göteborg",
-                "title": "Stugby 'Green Park'",
-                "link": "green-park"
-            },
-            {
-                "city": "Malmö",
-                "title": "Sportcenter 'Sport'",
-                "link": "sport"
-            }
-        ]
+        "sunny": {
+            "image-count": "1",
+            "city": "Umeå",
+            "title": "Bostadskomplex 'Sunny'"
+        },
+        "prestige": {
+            "image-count": "1",
+            "city": "Stockholm",
+            "title": "Kontorscenter 'Prestige'"
+        },
+        "greenPark": {
+            "image-count": "1",
+            "city": "Göteborg",
+            "title": "Stugby 'Green Park'"
+        },
+        "sport": {
+            "image-count": "1",
+            "city": "Malmö",
+            "title": "Sportcenter 'Sport'"
+        }
     },
     "services": {
         "title": "Våra tjänster",
