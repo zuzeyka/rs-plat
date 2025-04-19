@@ -24,22 +24,22 @@
         "title": "Objekt",
         "subtitle": "Våra projekt",
         "sunny": {
-            "image-count": "1",
+            "image-count": "4",
             "city": "Umeå",
             "title": "Bostadskomplex 'Sunny'"
         },
         "prestige": {
-            "image-count": "1",
+            "image-count": "4",
             "city": "Stockholm",
             "title": "Kontorscenter 'Prestige'"
         },
         "greenPark": {
-            "image-count": "1",
+            "image-count": "4",
             "city": "Göteborg",
             "title": "Stugby 'Green Park'"
         },
         "sport": {
-            "image-count": "1",
+            "image-count": "4",
             "city": "Malmö",
             "title": "Sportcenter 'Sport'"
         }

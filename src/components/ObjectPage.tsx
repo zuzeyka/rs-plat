@@ -23,7 +23,7 @@ const ObjectPage: React.FC = () => {
             const videoCount = Number(t(`objects.${campaignId}.video-count`, { defaultValue: 0 }));
 
             const basePath = `/objects/${campaignId}/`;
-            const imagesArray = Array.from({ length: imageCount }, (_, index) => `${basePath}${index}.jpg`);
+            const imagesArray = Array.from({ length: imageCount }, (_, index) => `${basePath}${index}.png`);
             const videosArray = Array.from({ length: videoCount }, (_, index) => `${basePath}video${index}.mp4`);
             setMedia([...imagesArray, ...videosArray]);
         };
@@ -39,13 +39,13 @@ const ObjectPage: React.FC = () => {
                         <video
                             src={media[activeIndex]}
                             controls
-                            className={`w-full h-96 object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
+                            className={`w-full h-96 z-10 relative object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
                         />
                     ) : (
                         <img
                             src={media[activeIndex]}
                             alt={`Media ${activeIndex + 1}`}
-                            className={`w-full h-96 object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
+                            className={`w-full h-96 z-10 relative object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
                         />
                     )}
                 </>
