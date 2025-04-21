@@ -54,7 +54,7 @@ const Objects = () => {
                     <motion.a
                         key={obj.key}
                         href={obj.link}
-                        className="relative overflow-hidden rounded-lg cursor-pointer bg-black lg:bg-transparent lg:p-10 p-8"
+                        className="relative overflow-hidden rounded-lg cursor-pointer bg-black lg:bg-transparent lg:p-10 p-4"
                         variants={cardVariant}
                         initial="initial"
                         animate="animate"
@@ -63,30 +63,18 @@ const Objects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <h3 className="relative lg:absolute lg:top-64 lg:-left-36 text-xl font-bold text-typography-dark transform -rotate-90 lg:opacity-0 whitespace-nowrap">
-                            {obj.title}
-                        </h3>
-                        <div className="relative lg:absolute lg:-top-2 lg:-left-22 flex items-center justify-center lg:opacity-0 mb-4">
-                            <MapPinIcon />
-                            <h4 className="text-lg font-bold text-typography-dark ml-2">{obj.city}</h4>
-                        </div>
-
-                        <motion.div
-                            className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center"
-                            variants={overlayVariants}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <h3 className="text-xl font-bold text-typography-dark transform -rotate-90 mb-4">{obj.title}</h3>
-                            <div className="flex items-center">
-                                <MapPinIcon />
-                                <h4 className="text-lg font-bold text-typography-dark ml-2">{obj.city}</h4>
+                        <div className="absolute top-4 left-4 bg-black bg-opacity-70 text-white p-2 rounded-md shadow-md lg:static lg:bg-transparent lg:text-black lg:dark:text-white lg:p-0 lg:shadow-none">
+                            <h3 className="text-lg font-bold">{obj.title}</h3>
+                            <div className="flex items-center mt-1">
+                                <MapPinIcon className="w-4 h-4 mr-1" />
+                                <h4 className="text-sm">{obj.city}</h4>
                             </div>
-                        </motion.div>
+                        </div>
 
                         <motion.img
                             src={`objects/${obj.key}.png`}
                             alt={obj.title}
-                            className="w-full h-full object-cover"
+                            className="w-full md:h-96 h-64 object-cover rounded-lg border-4 border-secondary shadow-lg transition-transform duration-300 hover:scale-105"
                             variants={imageVariants}
                             transition={{ duration: 0.5 }}
                         />
