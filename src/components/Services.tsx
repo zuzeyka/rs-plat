@@ -50,7 +50,7 @@ const Services = () => {
                             </div>
                             <p className="lg:text-xl text-lg">{service.description}</p>
                             <p className="mt-4 font-bold text-primary lg:text-xl text-lg">
-                                {t('services.unitCost')}: ${service.unitCost} / m²
+                                {t('services.unitCost')}: {service.unitCost} kr / m²
                             </p>
                         </motion.div>
                     ))}
@@ -105,7 +105,7 @@ const Services = () => {
                                 transition={{ duration: 0.5 }}
                             >
                                 <p className="text-xl font-semibold">
-                                    {t('services.estimatedCost')}: ${cost.toLocaleString()}
+                                    {t('services.estimatedCost')}: {cost.toLocaleString()} kr
                                 </p>
                             </motion.div>
                         )}

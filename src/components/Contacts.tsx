@@ -29,13 +29,6 @@ const ContactsSection = () => {
     return (
         <section id="contacts" className="relative rounded-t-3xl bg-gradient-to-r from-primary-light to-secondary-light text-typography py-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:space-x-10">
-                <GeometricDecorations
-                    color="secondary-light"
-                    secondaryColor="typography"
-                    horizontalCount={0}
-                    verticalCount={0}
-                    plusCount={Math.floor(Math.random() * (20 - 5 + 1)) + 10}
-                />
                 <motion.div
                     className="w-full md:w-1/2 mb-10 md:mb-0 z-10"
                     initial={{ opacity: 0, x: -50 }}
