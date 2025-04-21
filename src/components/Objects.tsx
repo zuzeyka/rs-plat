@@ -35,10 +35,6 @@ const Objects = () => {
         initial: { x: 0, y: 0, scale: 1 },
         hover: { x: 20, y: 20, scale: 1.1 },
     };
-    const overlayVariants = {
-        initial: { x: 0, y: 0, opacity: 0 },
-        hover: { x: -20, y: -20, opacity: 1 },
-    };
     const cardVariant = {
         initial: { opacity: 0, y: 50 },
         animate: { opacity: 1, y: 0 },
