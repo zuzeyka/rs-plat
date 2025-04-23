@@ -40,11 +40,20 @@ const ObjectPage: React.FC = () => {
     };
 
     return (
-        <div ref={ref} className="w-full h-screen mx-auto p-8 md:p-12 rounded-lg">
+        <div
+            ref={ref}
+            className={`w-full h-screen mx-auto p-8 md:p-12 rounded-lg transition-opacity duration-500 ${
+                isInView ? 'opacity-100' : 'opacity-0'
+            }`}
+        >
             {media.length > 0 && (
                 <>
                     {isVideo(media[activeIndex]) ? (
-                        <video src={media[activeIndex]} controls className="w-full h-96 z-10 relative object-cover rounded-xl mb-6" />
+                        <video
+                            src={media[activeIndex]}
+                            controls
+                            className="w-full h-96 z-10 relative object-cover rounded-xl mb-6"
+                        />
                     ) : (
                         <img
                             src={media[activeIndex]}
@@ -72,8 +81,14 @@ const ObjectPage: React.FC = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handlePrevious} />
-                <CarouselNext className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handleNext} />
+                <CarouselPrevious
+                    className="bg-typography text-white p-2 rounded-full focus:outline-none"
+                    onClickCapture={handlePrevious}
+                />
+                <CarouselNext
+                    className="bg-typography text-white p-2 rounded-full focus:outline-none"
+                    onClickCapture={handleNext}
+                />
             </Carousel>
         </div>
     );
