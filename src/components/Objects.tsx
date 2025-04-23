@@ -68,7 +68,7 @@ const Objects = () => {
                         </div>
 
                         <motion.img
-                            src={`objects/${obj.key}.png`}
+                            src={`objects/${obj.key}.jpg`}
                             alt={obj.title}
                             className="w-full md:h-96 h-64 object-cover rounded-lg border-4 border-secondary shadow-lg transition-transform duration-300 hover:scale-105"
                             variants={imageVariants}

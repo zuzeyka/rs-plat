@@ -23,7 +23,7 @@ const ObjectPage: React.FC = () => {
             const videoCount = Number(t(`objects.${campaignId}.video-count`, { defaultValue: 0 }));
 
             const basePath = `/objects/${campaignId}/`;
-            const imagesArray = Array.from({ length: imageCount }, (_, index) => `${basePath}${index}.png`);
+            const imagesArray = Array.from({ length: imageCount }, (_, index) => `${basePath}${index}.jpg`);
             const videosArray = Array.from({ length: videoCount }, (_, index) => `${basePath}video${index}.mp4`);
             setMedia([...imagesArray, ...videosArray]);
         };
@@ -31,21 +31,25 @@ const ObjectPage: React.FC = () => {
         importMedia();
     }, [campaignId, t]);
 
+    const handleNext = () => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % media.length);
+    };
+
+    const handlePrevious = () => {
+        setActiveIndex((prevIndex) => (prevIndex - 1 + media.length) % media.length);
+    };
+
     return (
-        <div ref={ref} className={`max-w-4xl mx-auto p-4 md:p-6 bg-background rounded-lg shadow-md ${isInView ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div ref={ref} className="w-full h-screen mx-auto p-8 md:p-12 rounded-lg">
             {media.length > 0 && (
                 <>
                     {isVideo(media[activeIndex]) ? (
-                        <video
-                            src={media[activeIndex]}
-                            controls
-                            className={`w-full h-96 z-10 relative object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
-                        />
+                        <video src={media[activeIndex]} controls className="w-full h-96 z-10 relative object-cover rounded-xl mb-6" />
                     ) : (
                         <img
                             src={media[activeIndex]}
                             alt={`Media ${activeIndex + 1}`}
-                            className={`w-full h-96 z-10 relative object-cover rounded-xl mb-6 ${isInView ? 'animate-zoom-in' : 'opacity-0'}`}
+                            className="w-full h-96 z-10 relative object-cover rounded-xl mb-6"
                         />
                     )}
                 </>
@@ -59,7 +63,7 @@ const ObjectPage: React.FC = () => {
             >
                 <CarouselContent className="flex">
                     {media.map((item, index) => (
-                        <CarouselItem className={`basis-1/2 sm:basis-1/3 h-48 ${isInView ? 'animate-fade-in' : 'opacity-0'}`} key={index}>
+                        <CarouselItem className="basis-1/2 sm:basis-1/3 h-48" key={index}>
                             {isVideo(item) ? (
                                 <video src={item} className="w-full h-full object-cover rounded-xl" muted loop />
                             ) : (
@@ -68,14 +72,8 @@ const ObjectPage: React.FC = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious
-                    className="bg-background text-white p-2 rounded-full"
-                    onClickCapture={() => setActiveIndex((activeIndex - 1 + media.length) % media.length)}
-                />
-                <CarouselNext
-                    className="bg-gray-800 text-white p-2 rounded-full"
-                    onClickCapture={() => setActiveIndex((activeIndex + 1) % media.length)}
-                />
+                <CarouselPrevious className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handlePrevious} />
+                <CarouselNext className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handleNext} />
             </Carousel>
         </div>
     );

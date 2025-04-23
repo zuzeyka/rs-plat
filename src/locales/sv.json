@@ -24,12 +24,12 @@
         "title": "Objekt",
         "subtitle": "Våra projekt",
         "sunny": {
-            "image-count": "4",
+            "image-count": "3",
             "city": "Umeå",
             "title": "Bostadskomplex 'Sunny'"
         },
         "prestige": {
-            "image-count": "4",
+            "image-count": "3",
             "city": "Stockholm",
             "title": "Kontorscenter 'Prestige'"
         },
@@ -39,7 +39,7 @@
             "title": "Stugby 'Green Park'"
         },
         "sport": {
-            "image-count": "4",
+            "image-count": "3",
             "city": "Malmö",
             "title": "Sportcenter 'Sport'"
         }
@@ -58,37 +58,72 @@
             {
                 "id": 1,
                 "title": "Takbyte",
-                "description": "Byt ut din gamla takbeläggning mot en ny för att förbättra ditt hems skydd och energieffektivitet.",
+                "description": "Vi ersätter ditt gamla tak med ett nytt – hållbart, estetiskt och energieffektivt. Snabbt, tryggt och med garanti.",
                 "unitCost": 1200,
                 "icon": "🏠"
             },
             {
                 "id": 2,
                 "title": "Takarbete",
-                "description": "Vi utför takarbeten av högsta kvalitet för kommersiella fastigheter, så att du kan känna dig trygg i att ditt tak klarar alla väderförhållanden.",
+                "description": "Kompletta taklösningar för bostäder och kommersiella byggnader. Konstruktioner som klarar snö, vind och regn.",
                 "unitCost": 1500,
-                "icon": "🏢"
-            },
-            {
-                "id": 3,
-                "title": "Takpapp",
-                "description": "Vi monterar takpapp av högsta kvalitet för att ge ditt hem eller företag ett säkert och energieffektivt tak.",
-                "unitCost": 800,
                 "icon": "🔨"
             },
             {
+                "id": 3,
+                "title": "Tätskiktsarbeten",
+                "description": "Säkra tätskikt och isolering för yttertak, med papp eller duk efter dina behov.",
+                "unitCost": 800,
+                "icon": "💧"
+            },
+            {
                 "id": 4,
-                "title": "Snörasskydd",
-                "description": "Våra snörasskydd skyddar din fastighet från snöskred och is, vilket ökar säkerheten och förlänger byggnadens livslängd.",
+                "title": "Takpapp",
+                "description": "Hållbart skydd med modern bitumenpapp – perfekt för villa och industribyggnad.",
                 "unitCost": 500,
-                "icon": "🛋️"
+                "icon": "🧱"
             },
             {
                 "id": 5,
                 "title": "Plåtslageri",
-                "description": "Vi tillverkar och monterar plåtbeklädnader och takkonstruktioner av högsta kvalitet för att ge ditt hem eller företag ett säkert och energieffektivt tak.",
+                "description": "Måttanpassad metallbeklädnad för tak, fasad och detaljer – tillverkat med händer och hantverk.",
                 "unitCost": 300,
-                "icon": "📊"
+                "icon": "🛠️"
+            },
+            {
+                "id": 6,
+                "title": "Plåtarbeten",
+                "description": "Allt du kan tänka dig i falsad tunnplåt – från funktion till finish.",
+                "unitCost": 1000,
+                "icon": "📐"
+            },
+            {
+                "id": 7,
+                "title": "Snörasskydd",
+                "description": "Skydd för liv och egendom – säkra ditt tak från snö- och isras.",
+                "unitCost": 700,
+                "icon": "❄️"
+            },
+            {
+                "id": 8,
+                "title": "Takskottning",
+                "description": "Vi skottar tryggt och säkert – från villatak till stora fastigheter.",
+                "unitCost": 900,
+                "icon": "🚜"
+            },
+            {
+                "id": 9,
+                "title": "Servicearbeten",
+                "description": "Förebyggande kontroll – vi inspekterar och föreslår åtgärder innan problemen uppstår.",
+                "unitCost": 600,
+                "icon": "🧾"
+            },
+            {
+                "id": 10,
+                "title": "Takunderhållsplan",
+                "description": "Vi utför takunderhållsplaner för stora som små fastighetsägare.",
+                "unitCost": 1100,
+                "icon": "📋"
             }
         ]
     },
@@ -96,7 +131,7 @@
         "title": "Kontakta Oss",
         "description": "Vi finns här för att hjälpa dig med dina byggbehov. Kontakta oss via följande uppgifter.",
         "address": "Adress",
-        "addressValue": "Kvarnvägen 7 , 903 20 UMEÅ",
+        "addressValue": "Förrådsvägen 16b, 901 32 Umeå",
         "phone": "Telefon",
         "phoneValue": "+46 70 041 45 91",
         "email": "E-post",
@@ -116,10 +151,6 @@
     "footer": {
         "companyName": "Byggföretaget",
         "companyDescription": "Bygger på excellens sedan 1990",
-        "quickLinks": "Snabblänkar",
-        "home": "Hem",
-        "services": "Tjänster",
-        "contact": "Kontakt",
         "followUs": "Följ oss",
         "copyright": "© 2025 Byggföretaget. Alla rättigheter förbehållna."
     }

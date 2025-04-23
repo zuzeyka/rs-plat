@@ -53,38 +53,73 @@
         "list": [
             {
                 "id": 1,
-                "title": "Roof replacement",
-                "description": "Replace your old roof coating with a new one to improve your home's protection and energy efficiency.",
+                "title": "Roof Replacement",
+                "description": "We replace your old roof with a new one – durable, stylish, and energy-efficient. Fast, reliable, and with a guarantee.",
                 "unitCost": 1200,
                 "icon": "🏠"
             },
             {
                 "id": 2,
-                "title": "Roofing work",
-                "description": "We carry out roof work of the highest quality for commercial properties, so you can feel confident that your roof can withstand all weather conditions.",
+                "title": "Roofing Work",
+                "description": "Complete roofing solutions for residential and commercial buildings. Structures that withstand snow, wind, and rain.",
                 "unitCost": 1500,
-                "icon": "🏢"
-            },
-            {
-                "id": 3,
-                "title": "Roofing felt",
-                "description": "We mount the highest quality roofing board to give your home or company a safe and energy efficient roof.",
-                "unitCost": 800,
                 "icon": "🔨"
             },
             {
+                "id": 3,
+                "title": "Waterproofing Work",
+                "description": "Secure waterproofing and insulation for flat or sloped roofs, using bitumen or membrane based on your needs.",
+                "unitCost": 800,
+                "icon": "💧"
+            },
+            {
                 "id": 4,
-                "title": "Snow avalanche protection",
-                "description": "Our lace protection protects your property from snowshops and ice, which increases safety and extends the life of the building.",
+                "title": "Roofing Felt (Bitumen)",
+                "description": "Durable protection with modern roofing felt – ideal for houses and industrial buildings.",
                 "unitCost": 500,
-                "icon": "🛋️"
+                "icon": "🧱"
             },
             {
                 "id": 5,
-                "title": "Sheet metal worker",
-                "description": "We manufacture and assemble sheet metal cladding and roof structures of the highest quality to give your home or company a safe and energy efficient roof.",
+                "title": "Sheet Metal Work",
+                "description": "Custom sheet metal solutions for roofs, facades, and details – crafted with skill and precision.",
                 "unitCost": 300,
-                "icon": "📊"
+                "icon": "🛠️"
+            },
+            {
+                "id": 6,
+                "title": "Thin Sheet Metal Installations",
+                "description": "Everything possible with folded thin metal – from function to finish.",
+                "unitCost": 1000,
+                "icon": "📐"
+            },
+            {
+                "id": 7,
+                "title": "Snow Guards",
+                "description": "Protect lives and property – secure your roof from snow and ice slides.",
+                "unitCost": 700,
+                "icon": "❄️"
+            },
+            {
+                "id": 8,
+                "title": "Roof Snow Removal",
+                "description": "We remove snow safely and efficiently – from houses to large complexes.",
+                "unitCost": 900,
+                "icon": "🚜"
+            },
+            {
+                "id": 9,
+                "title": "Maintenance & Inspections",
+                "description": "Preventative care – we inspect and suggest improvements before problems arise.",
+                "unitCost": 600,
+                "icon": "🧾"
+            },
+            {
+                "id": 10,
+                "title": "Roof Maintenance Planning",
+                "description": "We create tailored roof maintenance plans for property owners.",
+                "unitCost": 1100,
+                "icon": "📋"
             }
         ]
     },
@@ -92,7 +127,7 @@
         "title": "Get in Touch",
         "description": "We are here to help you with your construction needs. Reach out to us using the following contact details.",
         "address": "Address",
-        "addressValue": "Förrådsvägen 16D, Umeå",
+        "addressValue": " Förrådsvägen 16b, 901 32 Umeå",
         "phone": "Phone",
         "phoneValue": "+46 70 041 45 91",
         "email": "Email",
@@ -112,10 +147,6 @@
     "footer": {
         "companyName": "Construction Co.",
         "companyDescription": "Building excellence since 1990",
-        "quickLinks": "Quick Links",
-        "home": "Home",
-        "services": "Services",
-        "contact": "Contact",
         "followUs": "Follow Us",
         "copyright": "© 2025 Construction Co. All rights reserved."
     }

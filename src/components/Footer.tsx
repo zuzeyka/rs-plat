@@ -18,26 +18,6 @@ const Footer = () => {
                         <p className="lg:text-sm text-xs mt-2">{t('footer.companyDescription', 'Building excellence since 1990')}</p>
                     </div>
                     <div className="flex flex-col md:flex-row md:items-center md:space-x-10">
-                        <div className="mb-4 md:mb-0">
-                            <h3 className="font-semibold text-secondary mb-2">{t('footer.quickLinks', 'Quick Links')}</h3>
-                            <ul className="space-y-1 lg:text-sm text-xs">
-                                <li>
-                                    <a href="#home" className="hover:text-typography-secondary transition-colors">
-                                        {t('footer.home', 'Home')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#services" className="hover:text-typography-secondary transition-colors">
-                                        {t('footer.services', 'Services')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#contacts" className="hover:text-typography-secondary transition-colors">
-                                        {t('footer.contact', 'Contact')}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                         <div>
                             <h3 className="font-semibold text-typography-secondary mb-2">{t('footer.followUs', 'Follow Us')}</h3>
                             <div className="flex space-x-4">
