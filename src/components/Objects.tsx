@@ -50,7 +50,7 @@ const Objects = () => {
                     <motion.a
                         key={obj.key}
                         href={obj.link}
-                        className="relative overflow-hidden rounded-lg cursor-pointer bg-black lg:bg-transparent lg:p-10 p-4"
+                        className="relative overflow-hidden rounded-lg cursor-pointer bg-transparent lg:p-10 p-4"
                         variants={cardVariant}
                         initial="initial"
                         animate="animate"

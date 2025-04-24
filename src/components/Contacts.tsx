@@ -29,7 +29,7 @@ const ContactsSection = () => {
         <section id="contacts" className="relative rounded-t-3xl bg-gradient-to-r from-primary-light to-secondary-light text-typography py-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:space-x-10">
                 <motion.div
-                    className="w-full md:w-1/2 mb-10 md:mb-0 z-10"
+                    className="w-full px-4 md:w-1/2 mb-10 md:mb-0 z-10"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
@@ -40,7 +40,9 @@ const ContactsSection = () => {
                     <div className="space-y-4 z-10">
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
-                            <a href="https://maps.app.goo.gl/5JdVy8KzgxkrJBpf8">{t('contacts.addressValue')}</a>
+                            <a href="https://maps.app.goo.gl/o3sTRkRrBakMp3Mc7" className="hover:underline text-secondary">
+                                {t('contacts.addressValue')}
+                            </a>
                         </div>
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.phone')}</h3>

@@ -34,7 +34,7 @@ const ThemeToggle = () => {
             {isVisible && (
                 <motion.button
                     onClick={toggleTheme}
-                    className="fixed bottom-6 left-6 bg-primary text-black p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all"
+                    className="fixed focus:outline-none bottom-6 left-6 bg-primary text-black p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}

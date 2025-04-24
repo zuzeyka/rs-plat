@@ -33,9 +33,6 @@ const Services = () => {
                             <h3 className="lg:text-4xl text-2xl font-semibold">{service.title}</h3>
                         </div>
                         <p className="lg:text-xl text-lg">{service.description}</p>
-                        <p className="mt-4 font-bold text-primary lg:text-xl text-lg">
-                            {t('services.unitCost')}: {service.unitCost} kr / m²
-                        </p>
                     </motion.div>
                 ))}
             </div>

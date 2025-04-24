@@ -8,12 +8,12 @@
     },
     "hero": {
         "title": "Welcome to RS-PLÅT AB!",
-        "subtitle": "We are a young and ambitious company that started our journey in 2023 and has already made a name for itself in Umeå. Our multinational team of skilled professionals delivers high-quality roofing and metalwork with precision and speed. Whether you are a private customer, a business, or a municipal client, you can rely on us for durable and aesthetically pleasing solutions.",
+        "subtitle": "A sheet metal shop based in Umeå with extensive experience in the profession as a second generation sheet metal worker as a foundation. A company with high ambitions and visions for the future, where the motivation is to maintain high quality and efficiency. A close-knit team where we work for and with each other to make the customer satisfied.",
         "contact": "Let us take care of your roof – contact us today!"
     },
     "about": {
         "title": "RS-Plat",
-        "subtitle": "The construction company",
+        "subtitle": " Sheet warehouse & roof experts",
         "description": "A young, ambitious, fast-growing team. A multinational team of professionals. Experience working with private clients and Umeå municipality.",
         "guaranteeTitle": "We guarantee:",
         "point1": "Fast and efficient solutions",
@@ -54,71 +54,55 @@
             {
                 "id": 1,
                 "title": "Roof Replacement",
-                "description": "We replace your old roof with a new one – durable, stylish, and energy-efficient. Fast, reliable, and with a guarantee.",
-                "unitCost": 1200,
+                "description": "We replace your roof! All types of metal roofs including band covering, tile roofs, as well as felt, waterproof roofs. Free quote.",
                 "icon": "🏠"
             },
             {
                 "id": 2,
-                "title": "Roofing Work",
-                "description": "Complete roofing solutions for residential and commercial buildings. Structures that withstand snow, wind, and rain.",
-                "unitCost": 1500,
+                "title": "Gutter",
+                "description": "Gutters, downpipes, and all types of roof drainage.",
                 "icon": "🔨"
             },
             {
                 "id": 3,
-                "title": "Waterproofing Work",
-                "description": "Secure waterproofing and insulation for flat or sloped roofs, using bitumen or membrane based on your needs.",
-                "unitCost": 800,
-                "icon": "💧"
+                "title": "Snow Guard",
+                "description": "Snow guards, roof ladders, and all other roof safety, according to industry standards.",
+                "icon": "❄️"
             },
             {
                 "id": 4,
-                "title": "Roofing Felt (Bitumen)",
-                "description": "Durable protection with modern roofing felt – ideal for houses and industrial buildings.",
-                "unitCost": 500,
-                "icon": "🧱"
-            },
-            {
-                "id": 5,
                 "title": "Sheet Metal Work",
-                "description": "Custom sheet metal solutions for roofs, facades, and details – crafted with skill and precision.",
-                "unitCost": 300,
+                "description": "Everything from window sills, chimney fittings, to folded metal roofs.",
                 "icon": "🛠️"
             },
             {
+                "id": 5,
+                "title": "Roof Felt, Waterproofing Work",
+                "description": "Everything from garage roofs, villas to large industrial properties.",
+                "icon": "💧"
+            },
+            {
                 "id": 6,
-                "title": "Thin Sheet Metal Installations",
-                "description": "Everything possible with folded thin metal – from function to finish.",
-                "unitCost": 1000,
+                "title": "Manufacturing",
+                "description": "Want to install yourself, no problem we manufacture what you need in our modern sheet metal workshop.",
                 "icon": "📐"
             },
             {
                 "id": 7,
-                "title": "Snow Guards",
-                "description": "Protect lives and property – secure your roof from snow and ice slides.",
-                "unitCost": 700,
-                "icon": "❄️"
-            },
-            {
-                "id": 8,
                 "title": "Roof Snow Removal",
-                "description": "We remove snow safely and efficiently – from houses to large complexes.",
-                "unitCost": 900,
+                "description": "We shovel safely and securely and efficiently everything from villa roofs to large properties.",
                 "icon": "🚜"
             },
             {
-                "id": 9,
-                "title": "Maintenance & Inspections",
-                "description": "Preventative care – we inspect and suggest improvements before problems arise.",
-                "unitCost": 600,
+                "id": 8,
+                "title": "Service Work",
+                "description": "Mostly through agreements with property owners, managers, housing associations.",
                 "icon": "🧾"
             },
             {
-                "id": 10,
-                "title": "Roof Maintenance Planning",
-                "description": "We create tailored roof maintenance plans for property owners.",
-                "unitCost": 1100,
+                "id": 9,
+                "title": "Roof Maintenance Plan",
+                "description": "We perform roof maintenance plans for large and small property owners.",
                 "icon": "📋"
             }
         ]

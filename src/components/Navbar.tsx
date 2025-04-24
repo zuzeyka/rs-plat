@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
             </div>
 
             <LanguageSwitcher />
-            <button className="lg:hidden text-secondary-light focus:outline-none" onClick={toggleMenu}>
+            <button className="lg:hidden text-secondary-light bg-transparent focus:outline-none" onClick={toggleMenu}>
                 {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
         </nav>

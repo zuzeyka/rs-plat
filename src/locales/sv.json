@@ -8,12 +8,12 @@
     },
     "hero": {
         "title": "Välkommen till RS-PLÅT AB! ",
-        "subtitle": "Vi är en ung och ambitiös firma som startade vår resa 2023 och redan har gjort oss ett namn i Umeå. Vår multinationella team av erfarna yrkesmän levererar högkvalitativa tak- och plåtarbeten med precision och hastighet. Oavsett om du är en privatkund, ett företag eller en kommunal beställare, kan du lita på oss för hållbara och estetiska lösningar.",
+        "subtitle": "Ett plåtslageri med säte i Umeå med stor erfarenhet i yrket som andra generationens plåtslagare som grund.  Ett företag med högt satta ambitioner och framtidsvisioner, där motivationen är att hålla hög kvalitet och effektivitet. Ett sammansvetsat team där vi jobbar för och med varandra för att göra kunden nöjd.",
         "contact": "Låt oss ta hand om ditt tak – kontakta oss idag!"
     },
     "about": {
         "title": "RS-Plat",
-        "subtitle": "Byggföretaget",
+        "subtitle": "Plåtslageri & Takexperter",
         "description": "Ett ungt, ambitiöst, snabbt växande team. Ett multinationellt team av proffs. Erfarenhet av arbete med privata uppdragsgivare och Umeå kommun.",
         "guaranteeTitle": "Vi garanterar:",
         "point1": "Snabba och effektiva lösningar",
@@ -58,71 +58,55 @@
             {
                 "id": 1,
                 "title": "Takbyte",
-                "description": "Vi ersätter ditt gamla tak med ett nytt – hållbart, estetiskt och energieffektivt. Snabbt, tryggt och med garanti.",
-                "unitCost": 1200,
+                "description": "Vi byter ditt tak! Alla typer av plåttak även bandtäcktäckning, tegeltak samt papp, tätskitstak. Kostnadsfri offert.",
                 "icon": "🏠"
             },
             {
                 "id": 2,
-                "title": "Takarbete",
-                "description": "Kompletta taklösningar för bostäder och kommersiella byggnader. Konstruktioner som klarar snö, vind och regn.",
-                "unitCost": 1500,
+                "title": "Hängränna",
+                "description": "Hängrännor, stuprör och alla typer av takavvattning.",
                 "icon": "🔨"
             },
             {
                 "id": 3,
-                "title": "Tätskiktsarbeten",
-                "description": "Säkra tätskikt och isolering för yttertak, med papp eller duk efter dina behov.",
-                "unitCost": 800,
-                "icon": "💧"
+                "title": "Snörasskydd",
+                "description": "Snörasskydd, takstegar och all övrig taksäkerhet, enligt branch standard.",
+                "icon": "❄️"
             },
             {
                 "id": 4,
-                "title": "Takpapp",
-                "description": "Hållbart skydd med modern bitumenpapp – perfekt för villa och industribyggnad.",
-                "unitCost": 500,
-                "icon": "🧱"
-            },
-            {
-                "id": 5,
                 "title": "Plåtslageri",
-                "description": "Måttanpassad metallbeklädnad för tak, fasad och detaljer – tillverkat med händer och hantverk.",
-                "unitCost": 300,
+                "description": "Allt från fönsterbleck, skorstensbeslag, till falsade plåttak.",
                 "icon": "🛠️"
             },
             {
+                "id": 5,
+                "title": "Takpapp, Tätskiktsarbeten",
+                "description": "Allt från garagetak, villor till stora industrifastigheter.",
+                "icon": "💧"
+            },
+            {
                 "id": 6,
-                "title": "Plåtarbeten",
-                "description": "Allt du kan tänka dig i falsad tunnplåt – från funktion till finish.",
-                "unitCost": 1000,
+                "title": "Tillverking",
+                "description": "Vill du montera själv, inga problem vi tillverkar det du behöver i vår moderna plåtverkstad.",
                 "icon": "📐"
             },
             {
                 "id": 7,
-                "title": "Snörasskydd",
-                "description": "Skydd för liv och egendom – säkra ditt tak från snö- och isras.",
-                "unitCost": 700,
-                "icon": "❄️"
-            },
-            {
-                "id": 8,
                 "title": "Takskottning",
-                "description": "Vi skottar tryggt och säkert – från villatak till stora fastigheter.",
-                "unitCost": 900,
+                "description": "Vi skottar tryggt och säkert och effektivt allt från villatak till stora fastigheter.",
                 "icon": "🚜"
             },
             {
-                "id": 9,
+                "id": 8,
                 "title": "Servicearbeten",
-                "description": "Förebyggande kontroll – vi inspekterar och föreslår åtgärder innan problemen uppstår.",
-                "unitCost": 600,
+                "description": "Mestadels via avtal med fastighetsägare, förvaltare, bostadsrättsföreningar.",
                 "icon": "🧾"
             },
             {
-                "id": 10,
+                "id": 9,
                 "title": "Takunderhållsplan",
                 "description": "Vi utför takunderhållsplaner för stora som små fastighetsägare.",
-                "unitCost": 1100,
                 "icon": "📋"
             }
         ]
