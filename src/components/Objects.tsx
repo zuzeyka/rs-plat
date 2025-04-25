@@ -41,9 +41,9 @@ const Objects = () => {
     };
 
     return (
-        <section id="objects" className="w-full relative mx-auto py-20 px-4 text-center text-secondary">
+        <section id="objects" className="w-full relative mx-auto my-20 px-4 text-center text-secondary">
             <h2 className="lg:text-7xl text-3xl mb-4">{title}</h2>
-            <h3 className="lg:text-3xl text-lg font-bold mb-10">{subtitle}</h3>
+            <h3 className="lg:text-3xl text-lg font-bold">{subtitle}</h3>
 
             <div className="grid md:grid-cols-3 gap-6">
                 {objects.map((obj, idx) => (
