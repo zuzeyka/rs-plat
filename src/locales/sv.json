@@ -115,7 +115,7 @@
         "title": "Kontakta Oss",
         "description": "Vi finns här för att hjälpa dig med dina byggbehov. Kontakta oss via följande uppgifter.",
         "address": "Adress",
-        "addressValue": "Förrådsvägen 16b, 901 32 Umeå",
+        "addressValue": "Förrådsvägen 16b, Umeå",
         "phone": "Telefon",
         "phoneValue": "+46 70 041 45 91",
         "email": "E-post",
@@ -136,6 +136,6 @@
         "companyName": "Byggföretaget",
         "companyDescription": "Bygger på excellens sedan 1990",
         "followUs": "Följ oss",
-        "copyright": "© 2025 Byggföretaget. Alla rättigheter förbehållna."
+        "copyright": "© 2025 Alla rättigheter förbehållna."
     }
 }

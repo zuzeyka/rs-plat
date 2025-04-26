@@ -111,7 +111,7 @@
         "title": "Get in Touch",
         "description": "We are here to help you with your construction needs. Reach out to us using the following contact details.",
         "address": "Address",
-        "addressValue": " Förrådsvägen 16b, 901 32 Umeå",
+        "addressValue": " Förrådsvägen 16b, Umeå",
         "phone": "Phone",
         "phoneValue": "+46 70 041 45 91",
         "email": "Email",
@@ -132,6 +132,6 @@
         "companyName": "Construction Co.",
         "companyDescription": "Building excellence since 1990",
         "followUs": "Follow Us",
-        "copyright": "© 2025 Construction Co. All rights reserved."
+        "copyright": "© 2025 All rights reserved."
     }
 }

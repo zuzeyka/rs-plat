@@ -6,20 +6,16 @@ const Footer = () => {
 
     return (
         <footer className="bg-typography dark:bg-black dark:text-white text-typography-dark py-12 relative">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 items-center flex flex-col">
                 <motion.div
                     className="flex flex-col md:flex-row justify-between items-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="mb-6 md:mb-0">
-                        <h1 className="lg:text-2xl text-lg font-bold text-secondary">{t('footer.companyName', 'Construction Co.')}</h1>
-                        <p className="lg:text-sm text-xs mt-2">{t('footer.companyDescription', 'Building excellence since 1990')}</p>
-                    </div>
                     <div className="flex flex-col md:flex-row md:items-center md:space-x-10">
                         <div>
-                            <h3 className="font-semibold text-typography-secondary mb-2">{t('footer.followUs', 'Follow Us')}</h3>
+                            <h3 className="font-semibold text-secondary mb-2">{t('footer.followUs', 'Follow Us')}</h3>
                             <div className="flex space-x-4">
                                 <a href="#" className="hover:text-typography-secondary transition-colors" aria-label="Facebook">
                                     <svg width="24" height="24" fill="currentColor">

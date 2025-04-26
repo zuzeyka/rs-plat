@@ -40,19 +40,19 @@ const ContactsSection = () => {
                     <div className="space-y-4 z-10">
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
-                            <a href="https://maps.app.goo.gl/o3sTRkRrBakMp3Mc7" className="hover:underline text-secondary">
+                            <a href="https://maps.app.goo.gl/o3sTRkRrBakMp3Mc7" className="hover:underline font-semibold text-secondary">
                                 {t('contacts.addressValue')}
                             </a>
                         </div>
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.phone')}</h3>
-                            <a href={`tel:${t('contacts.phoneValue')}`} className="hover:underline text-secondary">
+                            <a href={`tel:${t('contacts.phoneValue')}`} className="hover:underline font-semibold  text-secondary">
                                 {t('contacts.phoneValue')}
                             </a>
                         </div>
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.email')}</h3>
-                            <a href={`mailto:${t('contacts.emailValue')}`} className="hover:underline text-secondary">
+                            <a href={`mailto:${t('contacts.emailValue')}`} className="hover:underline font-semibold  text-secondary">
                                 {t('contacts.emailValue')}
                             </a>
                         </div>
