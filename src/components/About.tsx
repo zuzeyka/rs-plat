@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
     const { t } = useTranslation();
 
+    const data = t('about.list', { returnObjects: true }) as string[];
+
     return (
         <section id="about" className="relative w-full text-center text-typography-dark">
             <div className="container lg:flex mx-auto p-10 lg:p-20 relative">
@@ -15,10 +17,12 @@ const About = () => {
 
                 <div className="w-full z-10 text-left p-4 text-left lg:p-10 bg-background rounded-lg relative">
                     <h3 className="lg:text-3xl text-2xl text-center font-bold mb-6">{t('about.guaranteeTitle', 'Vi garanterar:')}</h3>
-                    <ul className="space-y-4 lg:text-xl text-lg">
-                        <li>✅ {t('about.point1')}</li>
-                        <li>✅ {t('about.point2')}</li>
-                        <li>✅ {t('about.point3')}</li>
+                    <ul className="flex flex-col lg:pb-14 lg:items-center justify-between h-full lg:text-xl text-lg">
+                        {data.map((item: string, index: number) => (
+                            <li className={'list-decimal' + (index % 2 === 0 ? ' text-primary' : ' text-secondary')} key={index}>
+                                {item}
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

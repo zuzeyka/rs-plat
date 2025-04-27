@@ -7,18 +7,17 @@
         "contacts": "Contacts"
     },
     "hero": {
-        "title": "Welcome to RS-PLÅT AB!",
+        "title": "Welcome to",
+        "company": "RS-PLÅT AB",
         "subtitle": "A sheet metal shop based in Umeå with extensive experience in the profession as a second generation sheet metal worker as a foundation. A company with high ambitions and visions for the future, where the motivation is to maintain high quality and efficiency. A close-knit team where we work for and with each other to make the customer satisfied.",
         "contact": "Let us take care of your roof – contact us today!"
     },
     "about": {
         "title": "RS-Plat",
         "subtitle": " Sheet warehouse & roof experts",
-        "description": "A young, ambitious, fast-growing team. A multinational team of professionals. Experience working with private clients and Umeå municipality.",
-        "guaranteeTitle": "We guarantee:",
-        "point1": "Fast and efficient solutions",
-        "point2": "High quality and attention to detail",
-        "point3": "Professional service and reliability"
+        "description": "After many years active in the industry, Rikard Svärling started RS plate.School by his father then childhood and is now referred to as second -generation sheet metal.We are a young company with lots of experience and ambitions, visions of a bright future.Own complete workshop at Västerslätt for the manufacture of all material for our various projects.",
+        "guaranteeTitle": "We also offer:",
+        "list": ["Sales of materials", "Private customers", "Property owner", "Tenant -owner associations and managers"]
     },
     "objects": {
         "title": "Objects",
@@ -104,6 +103,12 @@
                 "title": "Roof Maintenance Plan",
                 "description": "We perform roof maintenance plans for large and small property owners.",
                 "icon": "📋"
+            },
+            {
+                "id": 10,
+                "title": "Snow removal",
+                "description": "We are shooting your roof!Residential roofs, tenant -owner associations and large property ceiling.Safe and fast!",
+                "icon": "☃️"
             }
         ]
     },
@@ -117,7 +122,7 @@
         "email": "Email",
         "emailValue": "rikard@rsplatab.se",
         "hours": "Working Hours",
-        "hoursValue": "Mon-Fri: 8 AM - 5 PM",
+        "hoursValue": "Mon-Fri: 7 AM - 4 PM",
         "organizationNumber": "Organization Number",
         "organizationNumberValue": "559452-9207",
         "callbackTitle": "Request a Callback",

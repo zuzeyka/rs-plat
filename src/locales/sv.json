@@ -7,18 +7,17 @@
         "contacts": "Kontakter"
     },
     "hero": {
-        "title": "Välkommen till RS-PLÅT AB! ",
+        "title": "Välkommen till",
+        "company": "RS-PLÅT AB",
         "subtitle": "Ett plåtslageri med säte i Umeå med stor erfarenhet i yrket som andra generationens plåtslagare som grund.  Ett företag med högt satta ambitioner och framtidsvisioner, där motivationen är att hålla hög kvalitet och effektivitet. Ett sammansvetsat team där vi jobbar för och med varandra för att göra kunden nöjd.",
         "contact": "Låt oss ta hand om ditt tak – kontakta oss idag!"
     },
     "about": {
         "title": "RS-Plat",
         "subtitle": "Plåtslageri & Takexperter",
-        "description": "Ett ungt, ambitiöst, snabbt växande team. Ett multinationellt team av proffs. Erfarenhet av arbete med privata uppdragsgivare och Umeå kommun.",
-        "guaranteeTitle": "Vi garanterar:",
-        "point1": "Snabba och effektiva lösningar",
-        "point2": "Hög kvalitet och noggrannhet i varje detalj",
-        "point3": "Professionellt bemötande och pålitlighet"
+        "description": "Efter väldigt många år som verksam i branschen startade Rikard Svärling RS-Plåt. Skolad av sin far sedan barnsben och betecknas numera som andra generationens plåtslagare. Vi är ett ungt bolag med massor av erfarenhet samt ambitioner, visioner om en ljus framtid. Egen komplett verkstad på Västerslätt för tillverkning av allt material till våra olika projekt.",
+        "guaranteeTitle": "Vi erbjuder även:",
+        "list": ["Försäljning av material", "Privatkunder ", "Fastighetsägare", "Bostadsrättsföreingar samt förvaltare"]
     },
     "objects": {
         "title": "Objekt",
@@ -108,6 +107,12 @@
                 "title": "Takunderhållsplan",
                 "description": "Vi utför takunderhållsplaner för stora som små fastighetsägare.",
                 "icon": "📋"
+            },
+            {
+                "id": 10,
+                "title": "Snöröjning",
+                "description": "Vi skottar ditt Tak! Villatak, Bostadsrättsföreingar och stora fastighetstak. Säkert och Snabbt!",
+                "icon": "☃️"
             }
         ]
     },
@@ -121,7 +126,7 @@
         "email": "E-post",
         "emailValue": "rikard@rsplatab.se",
         "hours": "Öppettider",
-        "hoursValue": "Mån-Fre: 8.00 - 17.00",
+        "hoursValue": "Mån-Fre: 7.00 - 16.00",
         "organizationNumber": "Organisationsnummer",
         "organizationNumberValue": "559452-9207",
         "callbackTitle": "Begär en återuppringning",

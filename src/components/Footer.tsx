@@ -6,9 +6,9 @@ const Footer = () => {
 
     return (
         <footer className="bg-typography dark:bg-black dark:text-white text-typography-dark py-12 relative">
-            <div className="container mx-auto px-4 items-center flex flex-col">
+            <div className="container mx-auto px-4 flex flex-col">
                 <motion.div
-                    className="flex flex-col md:flex-row justify-between items-center"
+                    className="flex flex-col md:flex-row justify-center items-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}

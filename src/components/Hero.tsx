@@ -10,7 +10,10 @@ const Hero = () => {
                 style={{ backgroundImage: "url('home.png')" }}
             ></div>
             <div className="absolute inset-0 z-0 bg-black w-full h-full"></div>
-            <h1 className="lg:text-7xl z-10 text-3xl font-bold font-monserrat mb-4">{t('hero.title')}</h1>
+            <h1 className="lg:text-7xl z-10 text-3xl font-bold font-monserrat mb-4">
+                <span className="block">{t('hero.title')}</span>
+                <span className="block">{t('hero.company')}</span>
+            </h1>
             <p className="lg:text-2xl z-10 text-lg text-center">{t('hero.subtitle')}</p>
             <a
                 href="#contacts"
