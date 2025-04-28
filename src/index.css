@@ -140,5 +140,12 @@ button:focus-visible {
     }
 }
 
-@layer base {
+@media (hover: hover) and (pointer: fine) {
+    .hover-effect {
+        transition: transform 0.3s;
+    }
+
+    .hover-effect:hover {
+        transform: scale(1.05);
+    }
 }
