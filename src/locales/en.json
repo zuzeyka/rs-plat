@@ -126,12 +126,14 @@
         "organizationNumber": "Organization Number",
         "organizationNumberValue": "559452-9207",
         "callbackTitle": "Request a Callback",
-        "callbackDescription": "Enter your phone number and we will get back to you as soon as possible.",
-        "callbackPlaceholder": "Your phone number",
+        "callbackDescription": "Enter your information and we will get back to you as soon as possible.",
+        "callbackNamePlaceholder": "Your name",
+        "callbackEmailPlaceholder": "Your email",
+        "callbackTextlaceholder": "Hello, please call me back tomorrow at 10 o’clock on this phone.",
         "callbackSubmit": "Submit",
-        "callbackErrorEmpty": "Please enter your phone number.",
-        "callbackErrorInvalid": "Please enter a valid phone number.",
-        "callbackSuccess": "Thank you! We will call you back shortly."
+        "callbackSuccess": "Thank you! We will contact you back shortly.",
+        "formErrorEmpty": "Please fill in all fields.",
+        "formErrorEmail": "Please enter a valid email address."
     },
     "footer": {
         "companyName": "Construction Co.",

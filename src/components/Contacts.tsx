@@ -1,28 +1,41 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import PhoneInput from 'react-phone-input-2';
 import { Button } from './ui/button';
+import { Input } from './ui/input';
 
 const ContactsSection = () => {
-    const { t } = useTranslation();
-    const [phone, setPhone] = useState('');
-    const [callbackSuccess, setCallbackSuccess] = useState(false);
+    const { t, i18n } = useTranslation();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState(t('contacts.callbackTextlaceholder'));
+    const [formSuccess, setFormSuccess] = useState(false);
     const [error, setError] = useState('');
 
-    const handleCallbackSubmit = (e: React.FormEvent) => {
+    useEffect(() => {
+        setMessage(t('contacts.callbackTextlaceholder'));
+    }, [i18n.language, t]);
+
+    const handleFormSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s./0-9]*$/;
-        if (phone.trim() === '') {
-            setError(t('contacts.callbackErrorEmpty'));
-        } else if (!phoneRegex.test(phone)) {
-            setError(t('contacts.callbackErrorInvalid'));
-        } else {
-            setCallbackSuccess(true);
-            setPhone('');
-            setError('');
-            setTimeout(() => setCallbackSuccess(false), 5000);
+
+        if (!name.trim() || !email.trim() || !message.trim()) {
+            setError(t('contacts.formErrorEmpty'));
+            return;
         }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setError(t('contacts.formErrorInvalidEmail'));
+            return;
+        }
+
+        setFormSuccess(true);
+        setName('');
+        setEmail('');
+        setMessage(t('contacts.callbackTextlaceholder'));
+        setError('');
+        setTimeout(() => setFormSuccess(false), 5000);
     };
 
     return (
@@ -76,20 +89,33 @@ const ContactsSection = () => {
                 >
                     <h3 className="lg:text-4xl text-2xl font-bold mb-4">{t('contacts.callbackTitle')}</h3>
                     <p className="mb-6">{t('contacts.callbackDescription')}</p>
-                    <form onSubmit={handleCallbackSubmit} className="flex flex-col space-y-4">
-                        <PhoneInput
-                            country={'se'}
-                            value={phone}
-                            onChange={(phone) => setPhone(phone)}
-                            inputClass="p-3 bg-background border text-typography border-typography-dark rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            inputStyle={{ width: '100%' }}
+                    <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4">
+                        <Input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            placeholder={t('contacts.callbackNamePlaceholder')}
+                            className="p-3 dark:bg-background-dark bg-background-light border dark:text-typography-dark text-typography border-typography-dark rounded"
+                        />
+                        <Input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder={t('contacts.callbackEmailPlaceholder')}
+                            className="p-3 dark:bg-background-dark bg-background-light border dark:text-typography-dark text-typography border-typography-dark rounded"
+                        />
+                        <Input
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder={t('contacts.callbackTextlaceholder')}
+                            className="p-3 dark:bg-background-dark bg-background-light border dark:text-typography-dark text-typography border-typography-dark rounded"
                         />
                         {error && <p className="text-red-500">{error}</p>}
                         <Button type="submit" className="bg-primary hover:bg-primary-dark text-typography-dark py-3 rounded transition-colors">
                             {t('contacts.callbackSubmit')}
                         </Button>
                     </form>
-                    {callbackSuccess && (
+                    {formSuccess && (
                         <motion.div
                             className="mt-4 p-4 bg-green-200 text-green-800 rounded"
                             initial={{ opacity: 0 }}
