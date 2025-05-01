@@ -3,8 +3,6 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
     const { t } = useTranslation();
 
-    const data = t('about.list', { returnObjects: true }) as string[];
-
     return (
         <section id="about" className="relative w-full text-center text-typography-dark">
             <div className="container lg:flex mx-auto p-10 lg:p-20 relative">
