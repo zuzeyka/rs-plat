@@ -7,14 +7,10 @@
         "contacts": "Kontakter"
     },
     "hero": {
-        "title": "Välkommen till",
-        "company": "RS-PLÅT AB",
-        "subtitle": "Ett plåtslageri med säte i Umeå med stor erfarenhet i yrket som andra generationens plåtslagare som grund.  Ett företag med högt satta ambitioner och framtidsvisioner, där motivationen är att hålla hög kvalitet och effektivitet. Ett sammansvetsat team där vi jobbar för och med varandra för att göra kunden nöjd.",
         "contact": "Låt oss ta hand om ditt tak – kontakta oss idag!"
     },
     "about": {
-        "title": "RS-Plat",
-        "subtitle": "Plåtslageri & Takexperter",
+        "subtitle": "Ett plåtslageri med säte i Umeå med stor erfarenhet i yrket som andra generationens plåtslagare som grund.  Ett företag med högt satta ambitioner och framtidsvisioner, där motivationen är att hålla hög kvalitet och effektivitet. Ett sammansvetsat team där vi jobbar för och med varandra för att göra kunden nöjd.",
         "description": "Efter väldigt många år som verksam i branschen startade Rikard Svärling RS-Plåt. Skolad av sin far sedan barnsben och betecknas numera som andra generationens plåtslagare. Vi är ett ungt bolag med massor av erfarenhet samt ambitioner, visioner om en ljus framtid. Egen komplett verkstad på Västerslätt för tillverkning av allt material till våra olika projekt.",
         "guaranteeTitle": "Vi erbjuder även:",
         "list": ["Försäljning av material", "Privatkunder ", "Fastighetsägare", "Bostadsrättsföreingar samt förvaltare"]
@@ -44,15 +40,6 @@
         }
     },
     "services": {
-        "title": "Våra tjänster",
-        "description": "Vi erbjuder ett omfattande utbud av byggtjänster.",
-        "calculatorTitle": "Kostnadskalkylator",
-        "selectService": "Välj tjänst",
-        "area": "Yta (m²)",
-        "calculate": "Beräkna kostnad",
-        "estimatedCost": "Uppskattad kostnad",
-        "unitCost": "Pris per m²",
-
         "list": [
             {
                 "id": 1,
