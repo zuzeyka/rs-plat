@@ -116,6 +116,10 @@ button:focus-visible {
     animation-direction: alternate;
 }
 
+.second-logo {
+    background-image: url('/logo_runva_.svg');
+}
+
 @keyframes slideOpposite {
     0% {
         transform: translate(-50%, -100px);
