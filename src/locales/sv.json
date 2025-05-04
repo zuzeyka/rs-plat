@@ -19,15 +19,15 @@
     "objects": {
         "title": "Objekt",
         "subtitle": "Våra projekt",
-        "sunny": {
-            "image-count": "3",
+        "champingjonen": {
+            "image-count": "12",
             "city": "Umeå",
-            "title": "Bostadskomplex 'Sunny'"
+            "title": "Bostadsrättsförening 'Champingjonen'"
         },
-        "prestige": {
-            "image-count": "3",
-            "city": "Stockholm",
-            "title": "Kontorscenter 'Prestige'"
+        "sorfors_skola": {
+            "image-count": "8",
+            "city": "Umeå",
+            "title": "Skola 'Sörfors'"
         },
         "greenPark": {
             "image-count": "4",

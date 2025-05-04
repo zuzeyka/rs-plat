@@ -19,13 +19,13 @@
     "objects": {
         "title": "Objects",
         "subtitle": "Our projects",
-        "sunny": {
+        "champingjonen": {
             "city": "Umeå",
-            "title": "Residential Complex «Sunny»"
+            "title": "Residential Complex «Champingjonen»"
         },
-        "prestige": {
-            "city": "Stockholm",
-            "title": "Office Center «Prestige»"
+        "sorfors_skola": {
+            "city": "Umeå",
+            "title": "School «Sorfors»"
         },
         "greenPark": {
             "city": "Göteborg",
