@@ -42,23 +42,17 @@ const ObjectPage: React.FC = () => {
     return (
         <div
             ref={ref}
-            className={`w-full h-screen mx-auto p-8 md:p-12 rounded-lg transition-opacity duration-500 ${
-                isInView ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`w-full h-[90vh] flex flex-col justify-center items-center mx-auto p-8 md:p-12 rounded-lg bg-gray-100 shadow-lg transition-opacity duration-500 ${isInView ? 'opacity-100' : 'opacity-0'}`}
         >
             {media.length > 0 && (
                 <>
                     {isVideo(media[activeIndex]) ? (
-                        <video
-                            src={media[activeIndex]}
-                            controls
-                            className="w-full h-96 z-10 relative object-cover rounded-xl mb-6"
-                        />
+                        <video src={media[activeIndex]} controls className="w-full h-[60vh] z-10 relative object-cover rounded-xl mb-6" />
                     ) : (
                         <img
                             src={media[activeIndex]}
                             alt={`Media ${activeIndex + 1}`}
-                            className="w-full h-96 z-10 relative object-cover rounded-xl mb-6"
+                            className="w-full h-[60vh] z-10 relative object-cover rounded-xl mb-6"
                         />
                     )}
                 </>
@@ -70,9 +64,9 @@ const ObjectPage: React.FC = () => {
                     loop: true,
                 }}
             >
-                <CarouselContent className="flex">
+                <CarouselContent className="flex h-[20vh]">
                     {media.map((item, index) => (
-                        <CarouselItem className="basis-1/2 sm:basis-1/3 h-48" key={index}>
+                        <CarouselItem className="basis-1/2 sm:basis-1/3 h-full" key={index}>
                             {isVideo(item) ? (
                                 <video src={item} className="w-full h-full object-cover rounded-xl" muted loop />
                             ) : (
@@ -81,14 +75,8 @@ const ObjectPage: React.FC = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious
-                    className="bg-typography text-white p-2 rounded-full focus:outline-none"
-                    onClickCapture={handlePrevious}
-                />
-                <CarouselNext
-                    className="bg-typography text-white p-2 rounded-full focus:outline-none"
-                    onClickCapture={handleNext}
-                />
+                <CarouselPrevious className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handlePrevious} />
+                <CarouselNext className="bg-typography text-white p-2 rounded-full focus:outline-none" onClickCapture={handleNext} />
             </Carousel>
         </div>
     );

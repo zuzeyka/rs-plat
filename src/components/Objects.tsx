@@ -50,7 +50,7 @@ const Objects = () => {
                     <motion.a
                         key={obj.key}
                         href={obj.link}
-                        className="relative flex flex-col justify-between overflow-hidden rounded-lg cursor-pointer bg-transparent lg:p-10 p-4 h-full"
+                        className="relative flex flex-col justify-end overflow-hidden rounded-lg cursor-pointer bg-transparent lg:p-10 p-4 h-full"
                         variants={cardVariant}
                         initial="initial"
                         animate="animate"
@@ -59,22 +59,21 @@ const Objects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div className="absolute top-4 left-4 text-typography p-2 rounded-md shadow-md lg:static lg:bg-transparent lg:text-black lg:dark:text-white lg:p-0 lg:shadow-none">
-                            <h3 className="text-lg font-bold">{obj.title}</h3>
-                        </div>
-                        <div>
+                        <div className="flex flex-col items-start mb-4">
+                            <h3 className="text-lg font-bold dark:text-typography-dark text-typography">{obj.title}</h3>
                             <div className="flex items-center mt-1">
                                 <MapPinIcon className="w-4 h-4 mr-1" />
                                 <h4 className="text-sm">{obj.city}</h4>
                             </div>
-                            <motion.img
-                                src={`objects/${obj.key}.jpg`}
-                                alt={obj.title}
-                                className="w-full md:h-96 h-64 object-cover rounded-lg border-4 border-secondary shadow-lg hover-effect"
-                                variants={imageVariants}
-                                transition={{ duration: 0.5 }}
-                            />
                         </div>
+
+                        <motion.img
+                            src={`objects/${obj.key}.jpg`}
+                            alt={obj.title}
+                            className="w-full md:h-96 h-64 object-cover rounded-lg border-4 border-secondary shadow-lg hover-effect"
+                            variants={imageVariants}
+                            transition={{ duration: 0.5 }}
+                        />
                     </motion.a>
                 ))}
             </div>
