@@ -27,13 +27,13 @@
             "city": "Umeå",
             "title": "School «Sorfors»"
         },
-        "greenPark": {
-            "city": "Göteborg",
-            "title": "Cottage Town «Green Park»"
+        "savar_sagen": {
+            "city": "Umeå",
+            "title": "Warehouse «Savar Sagen»"
         },
-        "sport": {
-            "city": "Malmö",
-            "title": "Sports Center «Sport»"
+        "anaset": {
+            "city": "Umeå",
+            "title": "House «Anaset»"
         }
     },
     "services": {

@@ -29,15 +29,15 @@
             "city": "Umeå",
             "title": "Skola 'Sörfors'"
         },
-        "greenPark": {
-            "image-count": "4",
-            "city": "Göteborg",
-            "title": "Stugby 'Green Park'"
+        "savar_sagen": {
+            "image-count": "14",
+            "city": "Umeå",
+            "title": "Lager 'Sävar Sågen'"
         },
-        "sport": {
-            "image-count": "3",
-            "city": "Malmö",
-            "title": "Sportcenter 'Sport'"
+        "anaset": {
+            "image-count": "5",
+            "city": "Umeå",
+            "title": "Huset 'Anaset'"
         }
     },
     "services": {
