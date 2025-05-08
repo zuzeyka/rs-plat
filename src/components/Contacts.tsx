@@ -37,9 +37,17 @@ const ContactsSection = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message }),
             });
-            const data = await res.json();
+
+            const text = await res.text();
+            let data: { ok?: boolean; error?: string };
+            try {
+                data = JSON.parse(text);
+            } catch {
+                data = { error: text || 'Invalid JSON response' };
+            }
+
             if (!res.ok) {
-                throw new Error(data.error || 'Unknown error');
+                throw new Error(data.error || t('contacts.formErrorGeneric'));
             }
 
             setFormSuccess(true);

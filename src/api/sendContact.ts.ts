@@ -33,7 +33,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             to: 'stepan.tarasenko.26@gmail.com',
             subject: `New message from ${name}`,
             text: `
-You have a new message from your site:
+You have a new message from your site contact form:
 
 Name: ${name}
 Email: ${email}
