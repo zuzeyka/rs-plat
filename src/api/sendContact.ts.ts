@@ -2,10 +2,19 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 import nodemailer from 'nodemailer';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+    if (req.method === 'OPTIONS') {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        return res.status(200).end();
+    }
+
     if (req.method !== 'POST') {
-        res.setHeader('Allow', 'POST');
+        res.setHeader('Allow', 'POST,OPTIONS');
         return res.status(405).json({ error: `Method ${req.method} Not Allowed` });
     }
+
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     const { name, email, message } = req.body as {
         name?: string;
@@ -32,25 +41,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             from: `"RS-Plat Contact" <${process.env.SMTP_USER}>`,
             to: 'stepan.tarasenko.26@gmail.com',
             subject: `New message from ${name}`,
-            text: `
-You have a new message from your site contact form:
-
-Name: ${name}
-Email: ${email}
-
-Message:
-${message}
-      `,
-            html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
-      `,
+            text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+            html: `<p><strong>Name:</strong> ${name}</p>
+             <p><strong>Email:</strong> ${email}</p>
+             <p>${message}</p>`,
         });
-
         return res.status(200).json({ ok: true });
     } catch (err) {
-        console.error('Failed to send email:', err);
+        console.error(err);
         return res.status(500).json({ error: 'Failed to send email.' });
     }
 }
