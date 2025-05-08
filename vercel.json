@@ -1,8 +1,14 @@
 {
     "version": 2,
-    "rewrites": [
-        { "source": "/api/:path*", "destination": "/api/:path*" },
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/sendContact.ts"
+        },
 
-        { "source": "/(.*)", "destination": "/" }
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
     ]
 }
