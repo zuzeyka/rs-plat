@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const ContactsSection = () => {
     const { t, i18n } = useTranslation();
