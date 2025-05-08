@@ -6,7 +6,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-        return res.status(200).end();
+        return res.status(204).end();
     }
 
     if (req.method !== 'POST') {
@@ -27,12 +27,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: Number(process.env.SMTP_PORT),
+        host: process.env.SMTP_HOST!,
+        port: Number(process.env.SMTP_PORT!),
         secure: process.env.SMTP_SECURE === 'true',
         auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
+            user: process.env.SMTP_USER!,
+            pass: process.env.SMTP_PASS!,
         },
     });
 
@@ -48,7 +48,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         });
         return res.status(200).json({ ok: true });
     } catch (err) {
-        console.error(err);
+        console.error('Email send error:', err);
         return res.status(500).json({ error: 'Failed to send email.' });
     }
 }
