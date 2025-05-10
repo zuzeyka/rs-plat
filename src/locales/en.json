@@ -21,19 +21,19 @@
         "subtitle": "Our projects",
         "champingjonen": {
             "city": "Umeå",
-            "title": "Residential Complex «Champingjonen»"
+            "title": "Berghem"
         },
         "sorfors_skola": {
             "city": "Umeå",
-            "title": "School «Sorfors»"
+            "title": "Sörfors School"
         },
         "savar_sagen": {
             "city": "Umeå",
-            "title": "Warehouse «Savar Sagen»"
+            "title": "Savar Sagen"
         },
         "anaset": {
             "city": "Umeå",
-            "title": "House «Anaset»"
+            "title": "Anaset"
         }
     },
     "services": {
@@ -76,12 +76,6 @@
             },
             {
                 "id": 7,
-                "title": "Roof Snow Removal",
-                "description": "We shovel safely and securely and efficiently everything from villa roofs to large properties.",
-                "icon": "🚜"
-            },
-            {
-                "id": 8,
                 "title": "Service Work",
                 "description": "Mostly through agreements with property owners, managers, housing associations.",
                 "icon": "🧾"
@@ -102,7 +96,6 @@
     },
     "contacts": {
         "title": "Get in Touch",
-        "description": "We are here to help you with your construction needs. Reach out to us using the following contact details.",
         "address": "Address",
         "addressValue": " Förrådsvägen 16b, Umeå",
         "phone": "Phone",
@@ -113,8 +106,6 @@
         "hoursValue": "Mon-Fri: 7 AM - 4 PM",
         "organizationNumber": "Organization Number",
         "organizationNumberValue": "559452-9207",
-        "callbackTitle": "Request a Callback",
-        "callbackDescription": "Enter your information and we will get back to you as soon as possible.",
         "callbackNamePlaceholder": "Your name",
         "callbackEmailPlaceholder": "Your email",
         "callbackTextlaceholder": "Hello, please call me back tomorrow at 10 o’clock on this phone.",

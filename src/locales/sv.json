@@ -22,22 +22,22 @@
         "champingjonen": {
             "image-count": "12",
             "city": "Umeå",
-            "title": "Bostadsrättsförening 'Champingjonen'"
+            "title": "Berghem"
         },
         "sorfors_skola": {
             "image-count": "8",
             "city": "Umeå",
-            "title": "Skola 'Sörfors'"
+            "title": "Sörfors Skola"
         },
         "savar_sagen": {
             "image-count": "14",
             "city": "Umeå",
-            "title": "Lager 'Sävar Sågen'"
+            "title": "Sävarsågen"
         },
         "anaset": {
             "image-count": "5",
             "city": "Umeå",
-            "title": "Huset 'Anaset'"
+            "title": "Ånäset"
         }
     },
     "services": {
@@ -80,12 +80,6 @@
             },
             {
                 "id": 7,
-                "title": "Takskottning",
-                "description": "Vi skottar tryggt och säkert och effektivt allt från villatak till stora fastigheter.",
-                "icon": "🚜"
-            },
-            {
-                "id": 8,
                 "title": "Servicearbeten",
                 "description": "Mestadels via avtal med fastighetsägare, förvaltare, bostadsrättsföreningar.",
                 "icon": "🧾"
@@ -106,7 +100,6 @@
     },
     "contacts": {
         "title": "Kontakta Oss",
-        "description": "Vi finns här för att hjälpa dig med dina byggbehov. Kontakta oss via följande uppgifter.",
         "address": "Adress",
         "addressValue": "Förrådsvägen 16b, Umeå",
         "phone": "Telefon",
@@ -117,8 +110,6 @@
         "hoursValue": "Mån-Fre: 7.00 - 16.00",
         "organizationNumber": "Organisationsnummer",
         "organizationNumberValue": "559452-9207",
-        "callbackTitle": "Begär en återuppringning",
-        "callbackDescription": "Ange ditt information så ringer vi upp dig så snart som möjligt.",
         "callbackNamePlaceholder": "Ditt namn",
         "callbackEmailPlaceholder": "Din e-postadress",
         "callbackTextlaceholder": "Hej, ring mig tillbaka imorgon klockan 10 på den här telefonen.",

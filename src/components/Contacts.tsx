@@ -79,7 +79,6 @@ const ContactsSection = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="lg:text-4xl text-2xl font-bold mb-6">{t('contacts.title')}</h2>
-                    <p className="text-lg mb-6">{t('contacts.description')}</p>
                     <div className="space-y-4">
                         <div>
                             <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
@@ -122,9 +121,6 @@ const ContactsSection = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <h3 className="lg:text-4xl text-2xl font-bold mb-4">{t('contacts.callbackTitle')}</h3>
-                    <p className="mb-6">{t('contacts.callbackDescription')}</p>
-
                     <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4">
                         <Input
                             type="text"
