@@ -1,21 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
 const ContactsSection = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState(t('contacts.callbackTextlaceholder'));
+    const [message, setMessage] = useState('');
     const [formSuccess, setFormSuccess] = useState(false);
     const [error, setError] = useState('');
-
-    useEffect(() => {
-        setMessage(t('contacts.callbackTextlaceholder'));
-    }, [i18n.language, t]);
 
     const handleFormSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -53,7 +49,7 @@ const ContactsSection = () => {
             setFormSuccess(true);
             setName('');
             setEmail('');
-            setMessage(t('contacts.callbackTextlaceholder'));
+            setMessage('');
             setTimeout(() => setFormSuccess(false), 5000);
         } catch (err: any) {
             console.error(err);
@@ -62,14 +58,7 @@ const ContactsSection = () => {
     };
 
     return (
-        <section
-            id="contacts"
-            className="
-        relative rounded-t-3xl
-        bg-gradient-to-r from-primary-light to-secondary-light
-        text-typography py-20
-      "
-        >
+        <section id="contacts" className="relative rounded-t-3xl bg-gradient-to-r from-primary-light to-secondary-light text-typography py-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:space-x-10">
                 <motion.div
                     className="w-full md:w-1/2 px-4 mb-10 md:mb-0"
@@ -81,14 +70,9 @@ const ContactsSection = () => {
                     <h2 className="lg:text-4xl text-2xl font-bold mb-6">{t('contacts.title')}</h2>
                     <div className="space-y-4">
                         <div>
-                            <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
-                            <a
-                                href="https://maps.app.goo.gl/o3sTRkRrBakMp3Mc7"
-                                className="hover:underline font-semibold text-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {t('contacts.addressValue')}
+                            <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.email')}</h3>
+                            <a href={`mailto:${t('contacts.emailValue')}`} className="hover:underline font-semibold text-secondary">
+                                {t('contacts.emailValue')}
                             </a>
                         </div>
                         <div>
@@ -98,9 +82,14 @@ const ContactsSection = () => {
                             </a>
                         </div>
                         <div>
-                            <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.email')}</h3>
-                            <a href={`mailto:${t('contacts.emailValue')}`} className="hover:underline font-semibold text-secondary">
-                                {t('contacts.emailValue')}
+                            <h3 className="lg:text-xl text-lg font-semibold">{t('contacts.address')}</h3>
+                            <a
+                                href="https://maps.app.goo.gl/o3sTRkRrBakMp3Mc7"
+                                className="hover:underline font-semibold text-secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {t('contacts.addressValue')}
                             </a>
                         </div>
                         <div>
