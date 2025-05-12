@@ -108,7 +108,7 @@
         "organizationNumberValue": "559452-9207",
         "callbackNamePlaceholder": "Your name",
         "callbackEmailPlaceholder": "Your email",
-        "callbackTextlaceholder": "Hello, please call me back tomorrow at 10 o’clock on this phone.",
+        "callbackTextlaceholder": "Your message",
         "callbackSubmit": "Submit",
         "callbackSuccess": "Thank you! We will contact you back shortly.",
         "formErrorEmpty": "Please fill in all fields.",
