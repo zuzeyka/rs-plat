@@ -40,6 +40,7 @@ const ContactsSection = () => {
                 data = JSON.parse(text);
             } catch {
                 data = { error: text || 'Invalid JSON response' };
+                console.log(data);
             }
 
             if (!res.ok) {
