@@ -40,7 +40,6 @@ const ContactsSection = () => {
                 data = JSON.parse(text);
             } catch {
                 data = { error: text || 'Invalid JSON response' };
-                console.log(data);
             }
 
             if (!res.ok) {
@@ -53,7 +52,6 @@ const ContactsSection = () => {
             setMessage('');
             setTimeout(() => setFormSuccess(false), 5000);
         } catch (err: any) {
-            console.error(err);
             setError(err.message || t('contacts.formErrorGeneric'));
         }
     };
