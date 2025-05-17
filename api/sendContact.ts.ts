@@ -38,12 +38,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     try {
         await transporter.sendMail({
-            from: `"RS-Plat Contact" <${process.env.SMTP_USER}>`,
-            to: 'stepan.tarasenko.26@gmail.com',
-            subject: `New message from ${name}`,
-            text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-            html: `<p><strong>Name:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
+            from: `"RS-Plat Kontakt" <${process.env.SMTP_USER}>`,
+            to: 'rikard@rsplatab.se',
+            subject: `Nya användarmeddelande från ${name} (rsplatab.se)`,
+            text: `Namm: ${name}\nE-post: ${email}\n\n${message}`,
+            html: `<p><strong>Namn:</strong> ${name}</p>
+             <p><strong>E-post:</strong> ${email}</p>
              <p>${message}</p>`,
         });
         return res.status(200).json({ ok: true });
